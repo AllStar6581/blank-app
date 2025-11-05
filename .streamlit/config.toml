@@ -1,20 +1,3 @@
 [theme]
 primaryColor = "#5E35B1"
 backgroundColor = "#ffffff"
-secondaryBackgroundColor = "#F0F2F6"
-textColor = "#262730"
-font = "sans serif"
-
-[theme.dark]
-primaryColor = "#5E35B1"
-backgroundColor = "#ffffff"
-secondaryBackgroundColor = "#F0F2F6"
-textColor = "#262730"
-font = "sans serif"
-
-[theme.light]
-primaryColor = "#5E35B1"
-backgroundColor = "#ffffff"
-secondaryBackgroundColor = "#F0F2F6"
-textColor = "#262730"
-font = "sans serif"

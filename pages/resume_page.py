@@ -48,13 +48,13 @@ if "selected_skills" not in st.session_state:
 resume_page = Resume.from_json(resume_dict)
 png_page = PdfPage(
     resume_page,
-    pallette={
-        "primary_color": "#f8f3eb",
-        "secondary_color": "#88a9c3",
-        "background_color": "#2b4257",
-        "black_color": "#FFFFFF",
-        "white_color": "#091235",
-    },
+    # pallette={
+    #     "primary_color": "#f8f3eb",
+    #     "secondary_color": "#88a9c3",
+    #     "background_color": "#2b4257",
+    #     "black_color": "#FFFFFF",
+    #     "white_color": "#091235",
+    # },
 )
 
 # doc_page = DocGenerator(resume_page=resume_page).generate(output_path="resume.docx")
@@ -109,10 +109,10 @@ class ResumeStPage(Page):
             st.title(resume_page.name)
             st.write(resume_page.expected_position)
             st.download_button(
-                label="📄 Download 1-page CV (png)",
+                label="📄 Download CV as .docx file (word)",
                 data=PDFbyte,
                 # file_name="Resume.png",
-                file_name="Resume.docx",
+                file_name="Kriminetskii_Lead_Backend_2025_CV.docx",
                 mime="application/octet-stream",
             )
             st.write("📫", resume_page.email)
@@ -207,24 +207,3 @@ class ResumeStPage(Page):
                 if changed:
                     pass
                     # st.rerun()
-
-def get_caller_module():
-    frame = inspect.currentframe()
-    try:
-        # Поднимаемся на 2 уровня вверх:
-        # 1-й уровень — это вызов этой функции,
-        # 2-й уровень — это место, где импортировали текущий модуль
-        caller_frame = frame.f_back.f_back
-        caller_module = inspect.getmodule(caller_frame)
-        return caller_module.__name__ if caller_module else None
-    finally:
-        del frame  # Важно для избежания утечек памяти
-
-
-if __name__ != "__main__":
-    caller = get_caller_module()
-    print(f"Импортировано из модуля: {caller}")
-    if caller == 'streamlit.navigation.page':
-        ResumeStPage.page()
-else:
-    print("imported as main")
