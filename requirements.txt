@@ -9,6 +9,6 @@ dateparser
 matplotlib==3.8.3
 qrcode==7.4.2
 vobject==0.9.6.1
-Pillow==10.2.0
+Pillow
 streamlit-tags==1.2.8
 python-docx==1.2.0
