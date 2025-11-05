@@ -207,3 +207,20 @@ class ResumeStPage(Page):
                 if changed:
                     pass
                     # st.rerun()
+
+def get_caller_module():
+    frame = inspect.currentframe()
+    try:
+        caller_frame = frame.f_back.f_back
+        caller_module = inspect.getmodule(caller_frame)
+        return caller_module.__name__ if caller_module else None
+    finally:
+        del frame
+
+
+if __name__ != "__main__":
+    caller = get_caller_module()
+    if caller == 'streamlit.navigation.page':
+        ResumeStPage.page()
+else:
+    print("imported as main")
