@@ -2,7 +2,7 @@ streamlit==1.43.0
 git+https://github.com/marks/streamlit-airtable-connection
 st-annotated-text==4.0.1
 streamlit-bridge==1.1.3
-pydantic==2.6.2
+pydantic>=2.6.2
 # langchain_core
 python-dateutil==2.8.2
 dateparser
