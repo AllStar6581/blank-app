@@ -12,7 +12,6 @@ from PIL import Image
 import streamlit as st
 from pathlib import Path
 from functools import cache, lru_cache
-# from streamlit_tags import st_tags
 
 from pages.base_page import Page
 from data.resume_data import resume_dict
