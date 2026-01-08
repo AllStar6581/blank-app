@@ -1,5 +1,6 @@
 import os
 import sys
+
 dir_name = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if dir_name not in sys.path:
     sys.path.append(dir_name)
@@ -31,7 +32,6 @@ class Connector:
 
 
 class Page:
-
     connector = Connector()
 
     def page(self):

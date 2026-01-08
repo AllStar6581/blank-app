@@ -1,15 +1,18 @@
 resume_dict = {
-    "first_name" : "Alexandr",
-    "last_name" : "Kriminétskii",
-    "expected_position": "Lead / Senior Python Engineer",
-    "email" : "Kriminetz0810@gmail.com",
+    "first_name": "Alexandr",
+    "last_name": "Kriminétskii",
+    "expected_position": "Lead / Senior Backend Engineer",
+    "email": "Kriminetz0810@gmail.com",
+    "tel": "+77470305448",
     # "website" : "aKriminetskiy.tk",
-    "website" : "-",
+    "website": "https://kriminetskii.streamlit.app",
     "expected_salary": "$ 10000/mo",
     # "photo" : "https://cdn-icons-png.flaticon.com/512/912/912214.png",
     # "photo" : "https://cdn4.telegram-cdn.org/file/NxOGSQsiO05a9PFOwtFpI5dJpWyiVai6uJ87HqR7JiN4AVcZO4cDWcusdImsEQfvcIc_JVsVvP8jPL6PGkFisRK647J8DZU7G3-UtsYHZuDmqYnGDZy3zbeHMuB29eGeFzyBDmeFXpMT6V8qzd8lYabwwOJc6lntfQvohLRvRS3-bOyFeRlLDCXAyRb7uT-266FXhwjz8AHwPSmnL2efVO1baVFdmHa3kf8GP3Jzif4-wInsg_X2p9N1Wu-WHscajsY86r1Q7e4LY8VBzyVG_F5HhERgqSLZUHTSznZqKMTG6fe-Yn2hueSS2SK5MT0tkkAIe0mO2kb8jfmOoTJ36Q.jpg",
     "photo": "static/me.jpg",
-    "about" : "", 
+    "about": """
+Senior Backend Engineer with 9+ years of expertise in designing, building, and scaling robust Python-based systems. Specializes in translating business requirements into efficient, well-architected solutions using the C4 model, with a rigorous focus on software quality through comprehensive testing and static analysis. Combines backend development with DevOps practices to streamline delivery and reliability. Proven in leading backend teams to execute technical strategy and solve core business problems that drive measurable impact.
+    """,
     "contacts": [
         {
             "name": "telegram",
@@ -32,66 +35,87 @@ resume_dict = {
     ],
     "exp": [
         {
-            # ❌❌
+            # ❌✅
             "company_name": "UMI Technologies Corp. (Philippines)",
             "company_contacts": "umi.ph",
             "company_contacts_link": "https://umi.ph",
             "work_start_date": "10-2022",
             "work_end_date": "11-2025",
-            "position_name": "Senior/Lead Python Engineer",
+            "position_name": "Senior/Lead Backend Engineer",
             "description": """
-            UMI is fintech startup and online mobile platform that aggregates services of multiple BNPL credit loan providers.
-            As the first technical hire, I've architected and built the company's core BNPL aggregation platform from zero to production,
+            UMI is FinTech startup and online service with mobile app that aggregates services of multiple credit loan providers. 
+            As the first technical hire, I've architected and built the company's core BNPL aggregation platform backend from zero to production,
             establishing the technical vision and infrastructure for the system that generated revenue(processed ₱1Mln in approved loans within its first two weeks).
             Led technical hiring: screening, interviewing, and selection decisions for engineering candidates.
-            Led the technical scaling of the team from solo developer to 3+ engineers, establishing development processes and mentoring practices.
             Drove cross-functional technical excellence by establishing quality standards adopted across backend, mobile, and analytics teams.
-            Positioned company for investment through comprehensive technical documentation and due diligence materials.
-            Scaled the system to support multiple partners before the company's closure in 2025.
+            Always helped less experienced colleagues, provide mentoring to enhance team's overall expertise.
+            Positioned company for investment through comprehensive technical documentation and Due Diligence materials.
+            Scaled the system to support multiple partners before the company's closure in late 2025.
             """,
             "action_points": [
-                "Transformed business requirements into a scalable technical reality by designing and implementing a microservices architecture that handled 10+ backend services, enabling parallel development and system resilience.",
-                "Eliminated deployment bottlenecks by creating a fully automated CI/CD pipeline from scratch, reducing release cycles from days to hours and enabling the team to ship features reliably and frequently.",
-                "Increased system reliability by 40% through implementing comprehensive monitoring, alerting, and quality gates, dramatically reducing production incidents and mean time to resolution.",
-                "Accelerated team productivity and code quality by instituting code review practices, test automation standards, and mentoring programs, enabling the successful onboarding and growth of new team members.",
-                "Secured investor confidence by producing exhaustive technical documentation for due diligence, covering system architecture, security protocols, and disaster recovery strategies.",
-                "Extended platform capabilities with AI-powered features using RAG architecture, demonstrating ability to integrate cutting-edge technologies to solve business problems."
-                # ###
-                "Created the backend of the system, each of ~10 BE services",
-                "Deployed into production, system handles operations of 9 shops & 2 OLPs",
-                "Operated also as Fullstack and DevOps engineer, from 0 to prod",
-                "System made ₱ 1 MLN loan approved @ first 2 weeks in production",
-                "Implemented code quality code review and CI standards over the organization",
+                "Architected and implemented the core ~20 backend services successfully working in production",  # Что заархитектурил и придумал
+                # "", # Что разработал с нуля до прода
+                "Provided ~50 technical interviews, 4 engineers were hired",  # Как нанимал людей
+                "Provided mentoring, assisted with technical issues, consulted with less technically experienced colleagues, and taught new skills",  # Как менторил менее опытных коллег
+                "Designed and implemented a product knowledge-based LLM chatbot for technical support using RAG pipeline, qwen embedding, FIASS indexing",  # Как пилил RAG
+                "Implemented quality control and error monitoring into the development process",  # Как внедрил процессы контроля качества и слежки за ошибками
+                "Worked as a Backend, Fullstack, and DevOps engineer: from prototype to production, including infrastructure setup, CI/CD, monitoring, and fault-tolerance mechanisms",  # Как был dev ops и SysAdmin
+                "Eliminated deployment bottlenecks by creating a fully automated CI/CD pipeline from scratch, reducing release cycles from days to hours and enabling the team to ship features reliably and frequently",  # Переписать
+                "Secured investor confidence by producing exhaustive technical documentation for due diligence, covering system architecture, security protocols, and disaster recovery strategies",  # Как делал архитектурную документацию и Due Dillifence
+                "Provided load testing with infra preparation and results presentation for business",  # Как делал НТ и вкручивал мониторинг
+                # -------------------
+                # "Transformed business requirements into a scalable technical reality by designing and implementing a microservices architecture that handled 10+ backend services, enabling parallel development and system resilience.",
+                # "Eliminated deployment bottlenecks by creating a fully automated CI/CD pipeline from scratch, reducing release cycles from days to hours and enabling the team to ship features reliably and frequently.",
+                # "Increased system reliability by 40% through implementing comprehensive monitoring, alerting, and quality gates, dramatically reducing production incidents and mean time to resolution.",
+                # "Accelerated team productivity and code quality by instituting code review practices, test automation standards, and mentoring programs, enabling the successful onboarding and growth of new team members.",
+                # "Secured investor confidence by producing exhaustive technical documentation for due diligence, covering system architecture, security protocols, and disaster recovery strategies.",
+                # "Extended platform capabilities with AI-powered features using RAG architecture, demonstrating ability to integrate cutting-edge technologies to solve business problems."
+                # # ###
+                # "Created the backend of the system, each of ~15 BE services",
+                # "Deployed into production, system handles operations of 9 shops & 2 OLPs",
+                # "Operated also as Fullstack and DevOps engineer, from 0 to prod",
+                # "System made ₱ 1 MLN loan approved @ first 2 weeks in production",
+                # "Implemented code quality code review and CI standards over the organization",
             ],
             "responsibilities": [
-                    "Technical Strategy & System Architecture",
-    "Full-Stack Development & AI/ML Integration", 
-    "DevOps Engineering & Platform Reliability",
-    "Team Building & Technical Leadership",
-    "Quality Assurance & Process Improvement",
-                "architecture",
-                "development",
-                "hiring",
-                "deployment",
-                "mentoring",
-                "code review",
-                "dba",
+                "Technical Strategy",
+                "System Architecture",  # Архитектура и технические решения на бэкэнде
+                "Full-Stack Development",
+                "AI/ML Integration",  # Интеграция с LLM AI
+                "DevOps Engineering",
+                "Platform Reliability",  # Развёртывание, Системное администрирование, Поддержка CI-CD
+                "Technical Leadership",  # Контроль качества и техническое лидерство
+                "Quality Assurance",
+                "Process Improvement",  # Нововведенияв рабочий процесс
+                # "architecture", #
+                # "development", # Разработка бэкэнд и веб фронтенд
+                "Job applications CV screening",
+                "Technical interviewing",  # Техническое интервью и найм
+                "Deployment dev/prod",  #
+                "CI/CD configuration and maintaining",
+                "Mentoring",  # Помощь ближнему
+                "Code review",  # Код ревью
+                "DBA: setup, backup, restoring, replication",  # DBA, setup, backup, restore, replication
             ],
             "skills": [
                 "C4 model",
                 "LangChain",
                 "FastAPI",
-                "JavaScript",
+                {"name": "Python", "category": "Programming Languages"},
+                "RAG",
+                "FAISS",
+                "sentence-transformers",
+                "HuggingFace",
+                {"name": "JavaScript", "category": "Programming Languages"},
                 "React.js",
-                "Python",
                 "Django",
                 "Django Rest Framework (DRF)",
-                "Golang",
-                "Dart",
+                {"name": "Golang", "category": "Programming Languages"},
+                {"name": "Dart", "category": "Programming Languages"},
                 "Flutter",
                 "Ansible",
                 "Linux",
-                "Bash",
+                {"name": "Bash", "category": "Programming Languages"},
                 "Streamlit",
                 "Docker",
                 "RabbitMQ",
@@ -103,8 +127,8 @@ resume_dict = {
                 "Prometheus",
                 "Grafana",
                 "Hashicorp Vault",
-                "PromQL",
-                "Redis",
+                {"name": "PromQL", "category": "Programming Languages"},
+                {"name": "Redis", "category": "Databases"},
                 "RPC",
                 "JsonRPC",
                 "websocket",
@@ -115,43 +139,40 @@ resume_dict = {
                 "unittest",
                 "behave-testing",
                 "gitlab-ci",
-                "sentry",
                 "pg_logical",
                 "SonarQube",
                 "Firebase",
                 "Elasticsearch",
                 "ELK",
-                "KQL",
+                {"name": "KQL", "category": "Programming Languages"},
                 "Filebeat",
                 "PowerBi",
                 "jsCPD",
-                "Precommit", 
-                "SonarQube", 
+                "Precommit",
+                "SonarQube",
                 "UiAutomator2",
                 "playwright",
                 "nextcloud",
                 "nginx",
                 "appium",
-                "kotlin",
+                {"name": "kotlin", "category": "Programming Languages"},
                 "pgbouncer",
                 "flowpipe",
                 "load testing",
                 "locust",
-                "FAISS",
-                "sentence-transformers",
-                "HuggingFace"
                 "mixtral",
                 "phi3",
                 "plantuml",
-                "coturn"
+                "Keycloak",
+                "coturn",
             ],
         },
         {
-            # ✅
+            # ❌❌ описание устарело, взять из русской версии
             "company_name": "Innopolis University, refresher courses centre",
             "company_contacts": "https://innopolis.university/dpo-courses/",
             "company_contacts_link": "https://stc.innopolis.university",
-            "work_start_date": "10-2020",
+            "work_start_date": "05-2020",
             "work_end_date": "11-2023",
             "position_name": "Python course instructor for employees of companies",
             "description": """
@@ -178,13 +199,25 @@ resume_dict = {
                 "Flask",
                 "Django",
                 "Django Rest Framework (DRF)",
-                "JavaScript",                
+                "JavaScript",
                 "TeamCity",
                 "RabbitMQ",
+                "Redis",
                 "postgresql",
                 "Docker",
                 "nginx",
                 "docker-compose",
+                "postgresql",
+                "mongodb",
+                "pandas",
+                "sklearn",
+                "probstat",
+                "matplotlib",
+                "seaborn",
+                "machine lerning",
+                "neural networks",
+                "data analysis",
+                "streamlit",
                 "Ansible",
                 "TestRail",
                 "gitlab-ci",
@@ -197,14 +230,12 @@ resume_dict = {
                 "nginx",
                 "ELK",
                 "Sentry",
-
             ],
-            "video_links" : [
+            "video_links": [
                 "https://youtu.be/L3JiJwwkECw",
                 "https://youtu.be/OGyDhKET7nA",
-                # "https://youtu.be/1fYsSUhuPys",
                 "https://youtu.be/x51PjXu4HxY",
-            ]
+            ],
         },
         {
             # ❌❌
@@ -215,9 +246,9 @@ resume_dict = {
             "work_end_date": "08-2022",
             "position_name": "Python Developer",
             "description": """
-            Kuper is a part of SBER ecosystem: the tech giant bank in Russia.
+            Kuper (SberMarket) is a part of SBER ecosystem: the tech giant in Russia.
             
-
+ 
             * Developed a backend (with RestApi) of web services for internal use; Prototyping and development of web project architecture, development of database models
             * Decomposed tasks, distributed tasks for team members (organized work for backend developers)
             * Conducted ALL scrum events (Planning, retro, backlog review, ...)
@@ -228,7 +259,7 @@ resume_dict = {
             * Monitored already launched services
             """,
             "action_points": [
-                "Developed6 5 internal services for employees",
+                "Developed 5 internal services for employees",
                 "Provided all SCRUM activities",
                 "Distributed tasks for backend developers in the team",
             ],
@@ -245,33 +276,33 @@ resume_dict = {
                 "Django",
                 "Django Rest Framework (DRF)",
                 "FastAPI",
-                "Wagtail", 
-                "Docker", 
-                "Kubernetes", 
-                "Postgresql", 
-                "Rabbitmq", 
-                "Redis", 
+                "Wagtail",
+                "Docker",
+                "Kubernetes",
+                "Postgresql",
+                "Rabbitmq",
+                "Redis",
                 "Kafka",
                 "grpc",
                 "keycloak",
                 "Nexus OSS",
-                "protobuf", 
+                "protobuf",
                 "Hashicorp Vault",
-                "fitz", 
-                "Grafana", 
-                "PromQL", 
-                "Precommit", 
-                "SonarQube", 
-                "tox", 
-                "gitlab-ci", 
-                "NetworkX", 
-                "treebeard", 
-                "sentry", 
+                "fitz",
+                "Grafana",
+                "PromQL",
+                "Precommit",
+                "SonarQube",
+                "tox",
+                "gitlab-ci",
+                "NetworkX",
+                "treebeard",
+                "sentry",
                 "ELK",
                 "KQL",
-                "pytest", 
+                "pytest",
                 "vcrpy",
-                ],
+            ],
         },
         {
             # ✅
@@ -284,7 +315,7 @@ resume_dict = {
             "description": """
             GIS centre is research-and-develop part of Innopolis university that develops Geographical online systems.
 
-            I was working on two projects: KSDM and Teleagronom
+            Worked on two projects: KSDM and Teleagronom
 
             KSDM:
             1. Implemented the backend of a geographic information system for monitoring remote sensing data for government bodies of the subjects of the Volga Federal District.
@@ -292,13 +323,13 @@ resume_dict = {
             Teleagronom:
             1. Developed a backend for a system for predicting the occurrence of harmful objects and dates of field work in agricultural fields for the Ministry of Agriculture of Mordovia and agricultural enterprises.
             2. Negotiated with third-party developers on the technical implementation of service integration, described the documentation of the expected api
-            3. Mentored less experienced colleagues, conducted a code-review
+            3. Mentored less experienced colleagues, conducted code-reviews
 
             project url: https://teleagronom.com
             """,
             "action_points": [
                 "Implemented geographic system that is used by federal government",
-                "Took part in developing agricultural monitoring system",
+                "Developed agricultural monitoring system",
                 "Negotiated and provided integration of system for business partners",
                 "Mentored less experienced colleagues",
             ],
@@ -330,6 +361,9 @@ resume_dict = {
                 "RabbitMQ",
                 "TestRail",
                 "Azure DevOps",
+                "pandas",
+                "matplotlib",
+                "seaborn",
                 "GeoPandas",
                 "Shapely",
                 "Fiona",
@@ -340,7 +374,7 @@ resume_dict = {
             ],
         },
         {
-             # ✅
+            # ✅
             "company_name": "Akvelon | Reddit | growth team",
             "company_contacts": "akvelon.com",
             "company_contacts_link": "https://akvelon.com",
@@ -349,18 +383,14 @@ resume_dict = {
             "position_name": "Senior Python developer (contractor)",
             "description": "Was contractor Backend SE for reddit.com. Implemented a centralized page indexing service. The service allows limited and prioritized indexing of reddit site pages for search results in google.",
             "action_points": [
-                "Took part in implementing centralized page indexer (reddit)",
+                "Developed centralized page indexer (reddit)",
             ],
-            "responsibilities": [
-                "Development",
-                "unittests",
-                "CI/CD"
-            ],
+            "responsibilities": ["Development", "unittests", "CI/CD"],
             "skills": [
                 "Python",
                 "Baseplate",
                 "Thrift",
-                "redis",
+                "Redis",
                 "DroneCI",
                 "Docker",
                 "Pytest",
@@ -393,7 +423,7 @@ resume_dict = {
             "action_points": [
                 "Created more than 10 microservices for omnichannel platform",
                 "Delivered system that handles more than 11 mln loyalty cards data",
-                "Took part in developing high load systems for >5000 points of sales",
+                "Developed high load systems for >5000 points of sales",
             ],
             "responsibilities": [
                 "Developing services for the platform",
@@ -407,7 +437,7 @@ resume_dict = {
                 "Python",
                 "Asyncio",
                 "Aiohttp",
-                "redis",
+                "Redis",
                 "Django",
                 "Django Rest Framework (DRF)",
                 "Celery",
@@ -444,14 +474,14 @@ resume_dict = {
             "company_contacts_link": "https://innopoliscamp.ru",
             "work_start_date": "12-2019",
             "work_end_date": "06-2020",
-            "position_name": "Python course instructor (part time)",
+            "position_name": "Python course instructor",
             "description": """
                 InnoCamp is a summer camp in Innopolis for teenagers who want to study computer science. 
 
-                I provided web-development python classes for teenagers (coding bootcamp).
+                Provided web-development python classes for teenagers (coding bootcamp).
                 """,
             "action_points": [
-                "Some teenagers I trained have become computer science university students",
+                "Some teenagers I trained have later become computer science university students",
             ],
             "responsibilities": [
                 "providing in-class lectures",
@@ -462,8 +492,9 @@ resume_dict = {
                 "Flask",
                 "postgresql",
                 "Telegram bot api",
+                "telethon",
                 "Jinja2",
-                "JavaScript"
+                "JavaScript",
             ],
         },
         {
@@ -484,7 +515,7 @@ resume_dict = {
 
             """,
             "action_points": [
-                "Provided not less than 20 lectures in english (which is  not my 1st language)",
+                "Provided not less than 20 lectures in english (which is not my 1st language)",
             ],
             "responsibilities": [
                 "providing in-class lectures",
@@ -492,20 +523,17 @@ resume_dict = {
                 "Grading students' course works",
             ],
             "skills": [
-                "Python",
-                "Django",
-                "Django Rest Framework (DRF)",
-                "FastAPI",
-                "Asyncio",
-                "Aiohttp",
-                "AWS S3",
-                "Docker",
-                "RabbitMQ",
-                "TestRail",
-                "GitLab",
-                "TeamCity",
                 "linux",
+                "Docker",
+                "Docker-Compose",
+                "K8s (Kubernetes)",
+                "Cloud architecture",
                 "bash",
+                "MS Azure",
+                "GCP",
+                "AWS",
+                "VMWare",
+                "LXC",
             ],
         },
         {
@@ -535,7 +563,7 @@ resume_dict = {
             "action_points": [
                 "Implemented service that processes >15Gb data daily",
                 "The service brought ₽6 mln to organization in first year",
-                "I held all SCRUM events",
+                "Held all SCRUM events",
                 "Got service integrated with bigger platform",
                 "Mentored one jr dev",
             ],
@@ -547,7 +575,10 @@ resume_dict = {
             ],
             "skills": [
                 "Python",
-                "Pandas",
+                "pandas",
+                "matplotlib",
+                "seaborn",
+                "data analysis",
                 "GeoPandas",
                 "Numpy",
                 "GDAL",
@@ -558,7 +589,7 @@ resume_dict = {
                 "LDAP",
                 "Nexus OSS",
                 "keycloak",
-                "redis",
+                "Redis",
                 "Docker-compose",
                 "Azure cloud",
                 "Azure devops CI/CD",
@@ -591,10 +622,13 @@ resume_dict = {
             "work_end_date": "07-2018",
             "position_name": "Python developer (internship)",
             "description": """
+            Tinkoff (T-bank) is one of largest banks in Russia.
             Created backend for web application (browser extension) used by help desk specialists.
             The app uses python and nlu (natural language understanding).
             """,
-            "action_points": [],
+            "action_points": [
+                "",
+            ],
             "responsibilities": [
                 "Implementing web backend",
                 "Collecting train data for ml models",
@@ -630,7 +664,7 @@ resume_dict = {
             "description": """
             AVAKS GeoService specializez on non-military uav drones. 
 
-            I created module for analyzing telemetry from unmanned aerial vehicles and three-dimensional display of flight history.
+            Created module for analyzing telemetry from unmanned aerial vehicles and three-dimensional display of flight history.
             The system was developed in C++ using Qt signals and Pangolin for 3D rendering.
             """,
             "action_points": [
@@ -665,7 +699,7 @@ resume_dict = {
             "description": """
             ChatBotShop was a web dev studio which specialized on website and chat bot development for business clients.
 
-            I worked on telegram chat-bot with django admin tool for customers from Israel. This bot was a pizza-ordering tool, which was not common by that time.
+            Worked on telegram chat-bot with django admin tool for customers from Israel. This bot was a pizza-ordering tool, which was not common by that time.
             """,
             "action_points": [
                 "Worked on bot for Israeli restaraunt",
@@ -703,13 +737,13 @@ resume_dict = {
             Created cource and provided classes for teenagers: '2d game development in python'. 2 classes a week for 12 students. 
             """,
             "action_points": [
-                "Produced brand new course for additional education club",
+                "Produced brand new training course",  # "Produced brand new course for additional education club",
                 "Provided offline classes for 12 students",
             ],
             "responsibilities": [
-                "producin course materials",
+                "producing course materials",
                 "providing offline classes",
-                "Reviewing code",
+                "Reviewing code, grading tasks",
                 "Giving feedback",
             ],
             "skills": [
@@ -719,6 +753,7 @@ resume_dict = {
                 "blender game engine",
                 "Git",
                 "OOP",
+                "Code review",
             ],
         },
         {
@@ -730,7 +765,7 @@ resume_dict = {
             "work_end_date": "08-2016",
             "position_name": "Java Android intern",
             "description": """
-            Beward is company that produces home security devices and sowtware.
+            Beward is company that produces home security devices and software.
 
             During my internship I have implemented 3 new screens for existing android app that was home cctv configuration app.
             Got remote work experience with competent mentor.
@@ -743,14 +778,22 @@ resume_dict = {
                 "Got tasks from mentor, write code for them",
                 "Worked with feedback from mentor",
             ],
-            "skills": ["java", "android", "gradle", "git", "Android Studio", "Genymotion", "OOP"],
+            "skills": [
+                "java",
+                "android",
+                "gradle",
+                "git",
+                "Android Studio",
+                "Genymotion",
+                "OOP",
+            ],
         },
     ],
     "edu": [
         {
             "degree": "Master of Science in IT - Software Engineering",
             "university": "Innopolis University",
-            "programme": "MSIT- Software Engineering",
+            "programme": "MSIT- Software Engineering (Carnegie Mellon University programme)",
             "year_start": "2017",
             "year_end": "2018",
             "website": "https://innopolis.university",
@@ -767,12 +810,12 @@ resume_dict = {
         },
     ],
     "spoken_languages": [
-        {"name": "English", "level" : "C1"},
-        {"name": "Polish", "level" : "B1"},
-        {"name": "InterSlavic", "level" : "A2"},
-        {"name": "Russian", "level" : "Native"},
+        {"name": "English", "level": "C1"},
+        {"name": "Polish", "level": "A2"},
+        # {"name": "InterSlavic", "level" : "A2"},
+        {"name": "Russian", "level": "Native"},
     ],
-    "projects" : [
+    "projects": [
         {
             "text": "",
             "link": "",
@@ -789,5 +832,5 @@ resume_dict = {
             "text": "",
             "link": "",
         },
-    ]
+    ],
 }

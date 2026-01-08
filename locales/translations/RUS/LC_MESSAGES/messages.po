@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "📄 Download CV as .docx file (word)"
+msgstr "📄 Скачать одним файлом (pdf)"
+
+msgid "Kriminetskii_Lead_Backend_2026_CV.docx"
+msgstr "Криминецкий_Lead_Backend_2026_CV.pdf"
+
+msgid "Total experience"
+msgstr "Опыт"
+
+msgid "years"
+msgstr "лет"
+
+msgid "months"
+msgstr "месяцев"
+
+msgid "yr"
+msgstr "г"
+
+msgid "mo"
+msgstr "мес"
+
+msgid "Experience"
+msgstr "Опыт работы"
+
+msgid "#### Responsibilities"
+msgstr "#### За что отвечал"
+
+msgid "#### Education"
+msgstr "#### Образование"
+
+msgid "Skills"
+msgstr "Навыки"
+
+msgid "Present"
+msgstr "Сейчас работаю"
