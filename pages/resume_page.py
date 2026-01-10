@@ -195,7 +195,7 @@ class ResumeStPage(Page):
                     phonenumbers.parse(resume_page.tel, None),
                     phonenumbers.PhoneNumberFormat.INTERNATIONAL,
                 )
-                tel_html = f'<a href="tel:{resume_page.tel}">☎️ {tel_e164}</a>'
+                tel_html = f'☎️ <a href="tel:{resume_page.tel}">{tel_e164}</a>'
                 st.markdown(tel_html, unsafe_allow_html=True)
 
         cols = st.columns(len(resume_page.contacts))
@@ -262,7 +262,7 @@ class ResumeStPage(Page):
                 st.header(exp.company_name)
                 if exp.company_contacts:
                     contact_html = (
-                        f'<a href="{exp.company_contacts_link}">🔗 {exp.company_contacts}</a>'
+                        f'🔗 <a href="{exp.company_contacts_link}">{exp.company_contacts}</a>'
                         if exp.company_contacts_link
                         else f"{exp.company_contacts}"
                     )

@@ -18,19 +18,22 @@ resume_dict = {
             "name": "telegram",
             "icon": "https://moscowteslaclub.ru/images/icons/telegram-color.svg?v6",
             "link": "https://t.me/AlexKrimi",
-            "text": "📱telegram: @AlexKrimi",
+            "text": "telegram: @AlexKrimi",
+            "emojii_prefix": "📱",
         },
         {
             "name": "linkedin",
             "icon": "https://www.tdcanadatrust.com/images/evergreen/icons/32x32/linkedin.png",
             "link": "https://www.linkedin.com/in/alexandr-Kriminetsky-128309159",
-            "text": "🪪linkedin: Alexandr Kriminetskiy",
+            "text": "linkedin: Alexandr Kriminetskiy",
+            "emojii_prefix": "🪪",
         },
         {
             "name": "planerka",
             "icon": "https://www.tdcanadatrust.com/images/evergreen/icons/32x32/linkedin.png",
             "link": "https://planerka.app/alex-krimi-ur5i7e/30min",
-            "text": "📞📆Созвониться на 30 минут",
+            "text": "Созвониться на 30 минут",
+            "emojii_prefix": "📆",
         },
     ],
     "exp": [
@@ -105,7 +108,8 @@ resume_dict = {
                 "RAG",
                 "FAISS",
                 "sentence-transformers",
-                "HuggingFace" "JavaScript",
+                "HuggingFace",
+                "JavaScript",
                 "React.js",
                 "Django",
                 "Django Rest Framework (DRF)",
@@ -790,7 +794,7 @@ resume_dict = {
     ],
     "edu": [
         {
-            "degree": "Master of Science in IT - Software Engineering",
+            "degree": "Магистратура - Master of Science in IT - Software Engineering",
             "university": "Университет Иннополис",
             "programme": "MSIT- Software Engineering (По учебной программе университета Carnegie Mellon)",
             "year_start": "2017",
@@ -799,7 +803,7 @@ resume_dict = {
             "icon": "https://embit.ru/wp-content/uploads/2023/06/873593.png",
         },
         {
-            "degree": "Бакалавр - Программная инженерия",
+            "degree": "Бакалавриат - Программная инженерия",
             "university": "Сибирский федеральный университет",
             "programme": "Программная инженерия",
             "year_start": "2013",

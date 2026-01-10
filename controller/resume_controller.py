@@ -16,10 +16,11 @@ class Contact(BaseModel):
     icon: str | None = None
     link: str | None
     text: str | None
+    emojii_prefix : str = ""
 
     def to_markdown(self):
         # return f"[{self.name}]({self.link})"
-        return f"[{self.text}]({self.link})"
+        return f"{self.emojii_prefix} [{self.text}]({self.link})"
 
 
 class Education(BaseModel):
