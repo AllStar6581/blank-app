@@ -36,6 +36,8 @@ class HHRuPDFGenerator:
     MAX_FIRST_EXPERIENCE_WITH_DESCRIPTION = 4
     MAX_FIRST_EXPERIENCE_WITH_ACTION_POINTS = 6
     MAX_FIRST_EXPERIENCE_WITH_SKILLS = None
+
+    BASE_FONT_SIZE = 9
     # COLORS
     TITLE_TEXT_COLOR = "#1a3d6d"
     POSITION_TEXT_COLOR = "#666666"
@@ -185,7 +187,7 @@ class HHRuPDFGenerator:
             ParagraphStyle(
                 name="HH-Title",
                 parent=self.styles["Heading1"],
-                fontSize=16,
+                fontSize=self.BASE_FONT_SIZE+7,
                 textColor=colors.HexColor(self.TITLE_TEXT_COLOR),
                 spaceAfter=6,
                 alignment=TA_LEFT,
@@ -198,7 +200,7 @@ class HHRuPDFGenerator:
             ParagraphStyle(
                 name="HH-Position",
                 parent=self.styles["Normal"],
-                fontSize=12,
+                fontSize=self.BASE_FONT_SIZE+3,
                 textColor=colors.HexColor(self.POSITION_TEXT_COLOR),
                 spaceAfter=12,
                 alignment=TA_LEFT,
@@ -212,7 +214,7 @@ class HHRuPDFGenerator:
             ParagraphStyle(
                 name="HH-SectionHeader",
                 parent=self.styles["Heading2"],
-                fontSize=12,
+                fontSize=self.BASE_FONT_SIZE+3,
                 textColor=colors.HexColor("#1a3d6d"),
                 spaceAfter=6,
                 spaceBefore=12,
@@ -231,7 +233,7 @@ class HHRuPDFGenerator:
             ParagraphStyle(
                 name="HH-Company",
                 parent=self.styles["Normal"],
-                fontSize=11,
+                fontSize=self.BASE_FONT_SIZE+2,
                 textColor=colors.HexColor("#333333"),
                 spaceAfter=2,
                 leftIndent=0,
@@ -245,7 +247,7 @@ class HHRuPDFGenerator:
             ParagraphStyle(
                 name="HH-Duration",
                 parent=self.styles["Normal"],
-                fontSize=9,
+                fontSize=self.BASE_FONT_SIZE,
                 textColor=colors.HexColor("#666666"),
                 spaceAfter=6,
                 leftIndent=0,
@@ -259,7 +261,7 @@ class HHRuPDFGenerator:
             ParagraphStyle(
                 name="HH-Responsibility",
                 parent=self.styles["Normal"],
-                fontSize=9,
+                fontSize=self.BASE_FONT_SIZE,
                 textColor=colors.HexColor("#444444"),
                 spaceAfter=3,
                 leftIndent=12,
@@ -273,7 +275,7 @@ class HHRuPDFGenerator:
             ParagraphStyle(
                 name="HH-JobDescription",
                 parent=self.styles["Normal"],
-                fontSize=9,
+                fontSize=self.BASE_FONT_SIZE,
                 textColor=colors.HexColor("#444444"),
                 spaceAfter=3,
                 leftIndent=12,
@@ -288,7 +290,7 @@ class HHRuPDFGenerator:
             ParagraphStyle(
                 name="HH-Contact",
                 parent=self.styles["Normal"],
-                fontSize=9,
+                fontSize=self.BASE_FONT_SIZE,
                 textColor=colors.HexColor("#333333"),
                 spaceAfter=2,
                 # fontName="Arial",
@@ -300,7 +302,7 @@ class HHRuPDFGenerator:
             ParagraphStyle(
                 name="HH-About",
                 parent=self.styles["Normal"],
-                fontSize=9,
+                fontSize=self.BASE_FONT_SIZE,
                 textColor=colors.HexColor("#444444"),
                 spaceAfter=3,
                 leftIndent=12,
@@ -468,7 +470,7 @@ class HHRuPDFGenerator:
 
         return contact_table
 
-    def _make_clickable_text(self, url, text, font_size=7):
+    def _make_clickable_text(self, url, text, font_size=BASE_FONT_SIZE):
         """Create text that looks and acts like a clickable link in PDF"""
         # Style for clickable links
         link_style = ParagraphStyle(
@@ -536,7 +538,7 @@ class HHRuPDFGenerator:
                                     name="QR-Title",
                                     parent=self.styles["Normal"],
                                     fontName="DejaVuSans-Bold",
-                                    fontSize=7,
+                                    fontSize=self.BASE_FONT_SIZE-2,
                                     alignment=TA_CENTER,
                                     textColor=colors.HexColor("#333333"),
                                 ),
@@ -549,7 +551,7 @@ class HHRuPDFGenerator:
                                     name="QR-Desc",
                                     parent=self.styles["Normal"],
                                     fontName="DejaVuSans",
-                                    fontSize=6,
+                                    fontSize=self.BASE_FONT_SIZE-3,
                                     alignment=TA_CENTER,
                                     textColor=colors.HexColor("#666666"),
                                 ),
@@ -805,7 +807,7 @@ class HHRuPDFGenerator:
                 name="SkillCombined",
                 parent=self.styles["Normal"],
                 fontName="DejaVuSans",
-                fontSize=9,
+                fontSize=self.BASE_FONT_SIZE,
                 leading=13,
                 alignment=TA_LEFT,
             ),

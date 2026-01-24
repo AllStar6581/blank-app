@@ -21,7 +21,7 @@ from data.resume_data_ru import resume_dict as resume_dict_ru
 from controller.resume_controller import ResumePage as Resume, SkillCategorized
 from controller.resume_docx_generator import InternationalDocxGenerator
 from controller.resume_pdf_generator import HHRuPDFGenerator
-from streamlit.runtime.scriptrunner import get_script_run_ctx
+# from streamlit.runtime.scriptrunner import get_script_run_ctx
 from locales.localization import get_text
 
 import streamlit as st
@@ -58,8 +58,6 @@ def normalize(skills):
         else:
             raise Exception("Unexpected object in skillset")
     return normalized_skill_set
-    # return {s.strip().lower() for s in skills}
-
 
 # Ensure selected_skills exists in session state
 if "selected_skills" not in st.session_state:
@@ -70,30 +68,6 @@ if "language" not in st.session_state or st.session_state.language == "ENGLISH":
     resume_page = Resume.from_json(resume_dict)
 else:
     resume_page = Resume.from_json(resume_dict_ru)
-# def resume_page_default() -> Resume:
-#     global resume_page
-#     resume_page = Resume.from_json(resume_dict)
-#     return resume_page
-
-
-# def resume_page_ru() -> Resume:
-#     global resume_page
-#     resume_page = Resume.from_json(resume_dict_ru)
-#     return resume_page
-
-
-# resume_page = resume_page_default()
-
-
-# def switch_lang_eng():
-#     if 'language' not in st.session_state or st.session_state.language != "ENGLISH":
-#         st.session_state['language'] = 'ENGLISH'
-
-
-# def switch_lang_ru():
-#     if 'language' not in st.session_state or st.session_state.language != "RUSSIAN":
-#         st.session_state['language'] = 'RUSSIAN'
-
 
 def switch_lang_rus_eng():
     if "language" not in st.session_state or st.session_state.language != "ENGLISH":
@@ -103,21 +77,6 @@ def switch_lang_rus_eng():
         st.session_state["language"] = "RUSSIAN"
         locale.setlocale(locale.LC_ALL, "ru_RU.UTF-8")
 
-
-# png_page = PdfPage(
-#     resume_page,
-#     # pallette={
-#     #     "primary_color": "#f8f3eb",
-#     #     "secondary_color": "#88a9c3",
-#     #     "background_color": "#2b4257",
-#     #     "black_color": "#FFFFFF",
-#     #     "white_color": "#091235",
-#     # },
-# )
-
-
-# doc_page = DocGenerator(resume_page=resume_page).generate(output_path="resume.docx")
-# doc_page
 # @cache
 def get_png_page_download(png_page):
     pagebuff = io.BytesIO()
@@ -136,7 +95,6 @@ def get_docx_page_download(page: Resume):
     docx_gen = generator_class(page)
     pagebuff = io.BytesIO()
     docx_gen.generate(pagebuff)
-    # png_page.create_resume_png(pagebuff)
     pagebuff.seek(0)
     return pagebuff.getvalue()
 

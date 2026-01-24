@@ -1,7 +1,6 @@
 from docx import Document
 from docx.shared import Inches, Pt, RGBColor, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.opc.constants import RELATIONSHIP_TYPE
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
@@ -9,7 +8,7 @@ import os
 from dateutil import rrule
 from collections import defaultdict
 from string import Template
-# from string import templatelib
+import locale
 
 from controller.resume_controller import ResumePage, Experience, SkillCategorized
 
@@ -57,6 +56,8 @@ class InternationalDocxGenerator:
 
     def generate(self, output_path: str):
         """Generate and save the DOCX document"""
+
+        locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
         self._add_ats_header()
         self._add_concise_summary()
         # self._add_experience()

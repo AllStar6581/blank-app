@@ -10,9 +10,16 @@ resume_dict = {
     # "photo" : "https://cdn-icons-png.flaticon.com/512/912/912214.png",
     # "photo" : "https://cdn4.telegram-cdn.org/file/NxOGSQsiO05a9PFOwtFpI5dJpWyiVai6uJ87HqR7JiN4AVcZO4cDWcusdImsEQfvcIc_JVsVvP8jPL6PGkFisRK647J8DZU7G3-UtsYHZuDmqYnGDZy3zbeHMuB29eGeFzyBDmeFXpMT6V8qzd8lYabwwOJc6lntfQvohLRvRS3-bOyFeRlLDCXAyRb7uT-266FXhwjz8AHwPSmnL2efVO1baVFdmHa3kf8GP3Jzif4-wInsg_X2p9N1Wu-WHscajsY86r1Q7e4LY8VBzyVG_F5HhERgqSLZUHTSznZqKMTG6fe-Yn2hueSS2SK5MT0tkkAIe0mO2kb8jfmOoTJ36Q.jpg",
     "photo": "static/me.jpg",
-    "about": """
-Senior Backend Engineer with 9+ years of expertise in designing, building, and scaling robust Python-based systems. Specializes in translating business requirements into efficient, well-architected solutions using the C4 model, with a rigorous focus on software quality through comprehensive testing and static analysis. Combines backend development with DevOps practices to streamline delivery and reliability. Proven in leading backend teams to execute technical strategy and solve core business problems that drive measurable impact.
-    """,
+#     "about": """
+# Senior Backend Engineer with 9+ years of expertise in designing, building, and scaling robust Python-based systems. Specializes in translating business requirements into efficient, well-architected solutions using the C4 model, with a rigorous focus on software quality through comprehensive testing and static analysis. Combines backend development with DevOps practices to streamline delivery and reliability. Proven in leading backend teams to execute technical strategy and solve core business problems that drive measurable impact.
+#     """,
+    "about" : """
+Senior Backend Engineer with 9+ years of professional experience in server-side development, specializing in designing, building, and scaling high-load fintech and retail platforms from zero to production.
+
+Possesses deep expertise in Python, microservices architecture (C4 model), and the full DevOps lifecycle (CI/CD, monitoring, IaC). Technologically agnostic, with a proven ability to deliver using various stacks (Go, React, Flutter, PostgreSQL, RabbitMQ, Docker) as business requirements dictate.
+
+Experienced in Agile environments, leading technical initiatives, establishing quality standards, and mentoring team members. A proactive and business-oriented engineer focused on driving revenue through reliable systems and frequent, measurable releases
+""",
     "contacts": [
         {
             "name": "telegram",
