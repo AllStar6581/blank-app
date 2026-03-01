@@ -38,3 +38,15 @@ msgstr "Навыки"
 
 msgid "Present"
 msgstr "Сейчас работаю"
+
+msgid "Compact CV (1-2 pages)"
+msgstr "Компактное CV (1-2 стр.)"
+
+msgid "#### Technical Skills"
+msgstr "#### Технические навыки"
+
+msgid "Search skills"
+msgstr "Поиск навыков"
+
+msgid "Type to filter skills..."
+msgstr "Введите для фильтрации навыков..."
