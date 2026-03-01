@@ -1,7 +1,11 @@
+"""Custom collection types for case-insensitive skill matching."""
+
 from collections.abc import MutableSet
 
 
 class CaseInsensitiveSet(MutableSet):
+    """A mutable set that treats string keys as case-insensitive."""
+
     def __init__(self, iterable=None):
         self._data = {}
         if iterable is not None:

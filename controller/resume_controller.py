@@ -1,102 +1,104 @@
-from pydantic import BaseModel, HttpUrl, root_validator
-from typing import List, Any
-from datetime import date
-from dateutil.relativedelta import relativedelta
-from dateutil import rrule
-import dateparser
-from collections import defaultdict
+"""Pydantic models for resume data: contacts, education, experience, and the full resume page."""
 
-from collections import Counter
+from collections import Counter, defaultdict
+from datetime import date
 from functools import cached_property
+from typing import Any, List
+
+import dateparser
+from dateutil import rrule
+from dateutil.relativedelta import relativedelta
+from pydantic import BaseModel, HttpUrl, root_validator
+
 from controller.data_structures import CaseInsensitiveSet
 
 
 class Contact(BaseModel):
+    """A contact link (social media, portfolio, etc.) displayed on the resume."""
+
     name: str
     icon: str | None = None
-    link: str | None
-    text: str | None
-    emojii_prefix : str = ""
+    link: str | None = None
+    text: str | None = None
+    emojii_prefix: str = ""
 
-    def to_markdown(self):
-        # return f"[{self.name}]({self.link})"
+    def to_markdown(self) -> str:
         return f"{self.emojii_prefix} [{self.text}]({self.link})"
 
 
 class Education(BaseModel):
+    """An education entry with degree, university, and time period."""
+
     degree: str
     university: str
     programme: str
     year_start: int
     year_end: int
     website: HttpUrl
-    icon: str | None
-
-    def to_html(self):
-        return ""
+    icon: str | None = None
 
 
 class SpokenLanguage(BaseModel):
+    """A spoken language with proficiency level."""
+
     name: str
     level: str
 
 
 class SkillCategorized(BaseModel):
+    """A skill with an optional category for grouping."""
+
     name: str
     category: str | None = None
 
 
 class Experience(BaseModel):
+    """A single work experience entry with date parsing and duration calculation."""
+
     company_name: str
     company_contacts: str
-    company_contacts_link: str | None
+    company_contacts_link: str | None = None
     work_start_date: date | str
-    work_end_date: date | str | None
-    work_start_date_object: date | None
-    work_end_date_object: date | None
-    total_time_delta: Any
+    work_end_date: date | str | None = None
+    work_start_date_object: date | None = None
+    work_end_date_object: date | None = None
+    total_time_delta: Any = None
     is_still_working: bool = False
     position_name: str
-    description: str | None
-    action_points: List[str] | None
-    responsibilities: List[str] | None
-    skills: List[str | SkillCategorized] | None
-    skill_set_upper: set | None
+    description: str | None = None
+    action_points: List[str] | None = None
+    responsibilities: List[str] | None = None
+    skills: List[str | SkillCategorized] | None = None
+    skill_set_upper: set | None = None
     video_links: List[str] | None = None
     location: str | None = None
 
     @property
-    def is_still_working(self):
-        if not self.work_end_date_object or self.work_end_date_object <= date.today():
-            return True
-        return False
-
-    @property
-    def current(self):
+    def current(self) -> bool:
         return self.is_still_working
 
     @property
-    def duration_months(self):
-        year_to_month_work_mapping = defaultdict(set)
+    def duration_months(self) -> int:
+        """Calculate total months worked using month-level granularity."""
+        year_to_month_mapping = defaultdict(set)
         for dt in rrule.rrule(
             rrule.MONTHLY,
             dtstart=self.work_start_date_object,
             until=self.work_end_date_object,
         ):
-            year_to_month_work_mapping[dt.year].add(dt.month)
-        overall_months = 0
-        for year, month_set in year_to_month_work_mapping.items():
-            overall_months += len(month_set)
-        return overall_months
+            year_to_month_mapping[dt.year].add(dt.month)
+        return sum(len(months) for months in year_to_month_mapping.values())
 
     @root_validator(pre=True)
-    def validate_on_create(cls, values):
-        is_still_working = False
+    def parse_dates_and_skills(cls, values):
+        """Parse date strings into date objects and compute duration delta."""
         actual_date_start = dateparser.parse(
             values.get("work_start_date"),
             date_formats=["%d-%m-%Y", "%m-%Y"],
             settings={"PREFER_DAY_OF_MONTH": "first"},
         ).date()
+
+        is_still_working = False
         try:
             actual_date_end = dateparser.parse(
                 values.get("work_end_date"),
@@ -106,6 +108,7 @@ class Experience(BaseModel):
         except TypeError:
             actual_date_end = date.today()
             is_still_working = True
+
         values["work_start_date_object"] = actual_date_start
         values["work_end_date_object"] = actual_date_end
         values["is_still_working"] = is_still_working
@@ -116,30 +119,36 @@ class Experience(BaseModel):
         if delta.months >= 12:
             delta.months -= 12
             delta.years += 1
-
         values["total_time_delta"] = delta
 
-        if is_still_working:
-            pass
-            # print(values)
-
         skill_set_upper = set()
-        for skill in values.get("skills"):
+        for skill in values.get("skills", []):
             if isinstance(skill, str):
                 skill_set_upper.add(skill.upper())
             else:
                 skill_set_upper.add(SkillCategorized(**skill).name)
-        # values["skill_set_upper"] = {x.upper() for x in values.get("skills")}
         values["skill_set_upper"] = skill_set_upper
+
         return values
 
 
+def _extract_skill_name(skill: str | SkillCategorized) -> str:
+    """Extract the display name from a skill (string or SkillCategorized)."""
+    if isinstance(skill, str):
+        return skill
+    if isinstance(skill, SkillCategorized):
+        return skill.name
+    raise TypeError(f"Unexpected skill type: {type(skill)}")
+
+
 class ResumePage(BaseModel):
+    """Full resume model aggregating contacts, experience, education, and skills."""
+
     first_name: str = ""
     last_name: str = ""
-    email: str | None
+    email: str | None = None
     tel: str | None = None
-    website: HttpUrl | str | None
+    website: HttpUrl | str | None = None
     expected_position: str = ""
     expected_salary: str | None = None
     photo: str | None = None
@@ -151,124 +160,94 @@ class ResumePage(BaseModel):
     spoken_languages: List[SpokenLanguage] | None = None
 
     @property
-    def name(self):
+    def name(self) -> str:
         return f"{self.first_name} {self.last_name}"
 
     @property
-    def full_name(self):
+    def full_name(self) -> str:
         return self.name
 
     @property
-    def position(self):
+    def position(self) -> str:
         return self.expected_position
 
     @property
-    def counter_of_main_skills(self):
+    def counter_of_main_skills(self) -> Counter:
+        """Count how many experience entries each skill appears in."""
         experience_counter = Counter()
         for experience in self.exp:
             for skill in experience.skills:
-                experience_counter[skill.lower()] += 1
+                experience_counter[_extract_skill_name(skill).lower()] += 1
         return experience_counter
 
     @property
-    def ordered_experience(self):
+    def ordered_experience(self) -> List[Experience]:
+        """Return experiences sorted by end date (most recent first)."""
         experience = self.exp
         experience.sort(key=lambda exp_: exp_.work_end_date_object, reverse=True)
         return experience
 
     @property
-    def all_skills_set(self):
-        experience = self.exp
-        skills_set = set()
-        for exp_ in experience:
-            for skill in exp_.skills:
-                if isinstance(skill, str):
-                    skills_set.add(skill)
-                elif isinstance(skill, SkillCategorized):
-                    skills_set.add(skill.name)
-                else:
-                    raise Exception("Unexpected object in skillset")
-        return skills_set
+    def all_skills_set(self) -> set[str]:
+        """Return a set of all unique skill names across all experiences."""
+        return {_extract_skill_name(skill) for exp_ in self.exp for skill in exp_.skills}
 
     @property
-    def all_categorized_skill_set(self):
-        experience = self.exp
-        skills_set = CaseInsensitiveSet()
-        for exp_ in experience:
+    def all_skills_categorized(self) -> dict[str, list[str]]:
+        """Return skills grouped by category from data, with 'Other skills' as fallback."""
+        categories: dict[str, set[str]] = {}
+        for exp_ in self.exp:
             for skill in exp_.skills:
-                if isinstance(skill, SkillCategorized):
-                    skills_set.add(skill)
-                elif isinstance(skill, str):
-                    skills_set.add(SkillCategorized(name=skill, category=None))
+                if isinstance(skill, SkillCategorized) and skill.category:
+                    cat = skill.category
+                    name = skill.name
                 else:
-                    raise Exception("Unexpected object in skillset")
+                    cat = "Other skills"
+                    name = _extract_skill_name(skill)
+                categories.setdefault(cat, set()).add(name)
+        return {k: sorted(v) for k, v in categories.items()}
 
-    # @property
     @cached_property
-    def total_experience_months(self):
-        year_to_month_work_mapping = defaultdict(set)
+    def total_experience_months(self) -> int:
+        """Calculate total unique months worked (handles overlapping periods)."""
+        year_to_month_mapping = defaultdict(set)
         for exp in self.exp:
-            date_start = exp.work_start_date_object
-            date_end = exp.work_end_date_object
-            for dt in rrule.rrule(rrule.MONTHLY, dtstart=date_start, until=date_end):
-                year_to_month_work_mapping[dt.year].add(dt.month)
+            for dt in rrule.rrule(
+                rrule.MONTHLY,
+                dtstart=exp.work_start_date_object,
+                until=exp.work_end_date_object,
+            ):
+                year_to_month_mapping[dt.year].add(dt.month)
+        return sum(len(months) for months in year_to_month_mapping.values())
 
-        overall_months = 0
-        for year, month_set in year_to_month_work_mapping.items():
-            overall_months += len(month_set)
-
-        return overall_months
-
-    # @property
     @cached_property
-    def total_experience_months_wide(self):
-        year_to_month_work_mapping = defaultdict(set)
-        date_start_list = []
-        date_end_list = []
-        for exp in self.exp:
-            date_start_list.append(exp.work_start_date_object)
-            date_end_list.append(exp.work_end_date_object)
+    def total_experience_months_wide(self) -> int:
+        """Calculate months from earliest start to latest end date."""
+        date_starts = [exp.work_start_date_object for exp in self.exp]
+        date_ends = [exp.work_end_date_object for exp in self.exp]
 
+        year_to_month_mapping = defaultdict(set)
         for dt in rrule.rrule(
-            rrule.MONTHLY, dtstart=min(date_start_list), until=max(date_end_list)
+            rrule.MONTHLY, dtstart=min(date_starts), until=max(date_ends)
         ):
-            year_to_month_work_mapping[dt.year].add(dt.month)
-        overall_months = 0
-        for year, month_set in year_to_month_work_mapping.items():
-            overall_months += len(month_set)
-        return overall_months
+            year_to_month_mapping[dt.year].add(dt.month)
+        return sum(len(months) for months in year_to_month_mapping.values())
 
     @classmethod
-    def from_json(cls, json_object):
-        contacts_json = json_object.get("contacts")
-        contacts = []
-        for contact_json in contacts_json:
-            contacts.append(Contact(**contact_json))
+    def from_json(cls, json_object: dict) -> "ResumePage":
+        """Build a ResumePage from a raw dictionary, parsing nested models."""
+        contacts = [Contact(**c) for c in json_object.get("contacts", [])]
+        exp = [Experience(**e) for e in json_object.get("exp", [])]
+        edu = [Education(**e) for e in json_object.get("edu", [])]
+        spoken_languages = [
+            SpokenLanguage(**sl) for sl in json_object.get("spoken_languages", [])
+        ]
 
-        experience_json = json_object.get("exp")
-        exp = []
-        for exp_json in experience_json:
-            exp.append(Experience(**exp_json))
-
-        education_json = json_object.get("edu")
-        edu = []
-        for edu_json in education_json:
-            edu.append(Education(**edu_json))
-
-        spoken_languages_json = json_object.get("spoken_languages", [])
-        spoken_languages = []
-        for spoken_language_json in spoken_languages_json:
-            spoken_languages.append(SpokenLanguage(**spoken_language_json))
-
-        page_dict = dict(
-            contacts=contacts,
-            exp=exp,
-            edu=edu,
-            spoken_languages=spoken_languages,
-        )
-        page_dict.update(json_object)
-
+        page_dict = {
+            **json_object,
+            "contacts": contacts,
+            "exp": exp,
+            "edu": edu,
+            "spoken_languages": spoken_languages,
+        }
         return cls(**page_dict)
-
-    def to_html(self):
-        return ""

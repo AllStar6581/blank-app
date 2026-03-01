@@ -14,3 +14,4 @@ streamlit-tags==1.2.8
 python-docx==1.2.0
 reportlab==4.4.4
 phonenumbers==9.0.19
+redis>=5.0.0

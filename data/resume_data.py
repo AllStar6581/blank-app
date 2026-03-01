@@ -6,7 +6,7 @@ resume_dict = {
     "tel": "+77470305448",
     # "website" : "aKriminetskiy.tk",
     "website": "https://kriminetskii.streamlit.app",
-    "expected_salary": "$ 10000/mo",
+    # "expected_salary": "",
     # "photo" : "https://cdn-icons-png.flaticon.com/512/912/912214.png",
     # "photo" : "https://cdn4.telegram-cdn.org/file/NxOGSQsiO05a9PFOwtFpI5dJpWyiVai6uJ87HqR7JiN4AVcZO4cDWcusdImsEQfvcIc_JVsVvP8jPL6PGkFisRK647J8DZU7G3-UtsYHZuDmqYnGDZy3zbeHMuB29eGeFzyBDmeFXpMT6V8qzd8lYabwwOJc6lntfQvohLRvRS3-bOyFeRlLDCXAyRb7uT-266FXhwjz8AHwPSmnL2efVO1baVFdmHa3kf8GP3Jzif4-wInsg_X2p9N1Wu-WHscajsY86r1Q7e4LY8VBzyVG_F5HhERgqSLZUHTSznZqKMTG6fe-Yn2hueSS2SK5MT0tkkAIe0mO2kb8jfmOoTJ36Q.jpg",
     "photo": "static/me.jpg",

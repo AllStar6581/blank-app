@@ -1,5 +1,8 @@
 .streamlit/secrets.toml
 
+# L2 cache directory (resume report blobs)
+.cache/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
