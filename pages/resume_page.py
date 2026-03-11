@@ -5,6 +5,12 @@ import locale
 import re
 import threading
 from pathlib import Path
+import os
+import sys
+
+dir_name = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if dir_name not in sys.path:
+    sys.path.append(dir_name)
 
 import phonenumbers
 import streamlit as st
@@ -568,7 +574,7 @@ def _render_download(language, L_):
     st.download_button(
         label=L_("📄 Download CV as .docx file (word)"),
         data=download_bytes,
-        file_name=L_("CV_Lead_Backend_2026_CV.docx"),
+        file_name=L_("Kriminetskii_Lead_Backend_2026_CV.docx"),
         mime="application/octet-stream",
     )
     # Pre-warm the OTHER compact variant so the next toggle is instant
