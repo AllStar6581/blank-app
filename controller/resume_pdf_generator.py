@@ -116,11 +116,28 @@ class HHRuPDFGenerator:
     def _register_fonts(self):
         """Register Cyrillic-compatible TrueType fonts."""
         try:
-            font_path = "DejaVuSans.ttf"
-            pdfmetrics.registerFont(TTFont("DejaVuSans", font_path))
-            pdfmetrics.registerFont(TTFont("DejaVuSans-Bold", font_path))
+            # font_path = "DejaVuSans.ttf"
+            # pdfmetrics.registerFont(TTFont("DejaVuSans", font_path))
+            # pdfmetrics.registerFont(TTFont("DejaVuSans-Bold", font_path))
+            # pdfmetrics.registerFontFamily(
+            #     "DejaVuSans", normal="DejaVuSans", bold="DejaVuSans-Bold",
+            # )
+            # Get the directory where this script resides
+            base_dir = os.path.dirname(__file__)
+            
+            # Build absolute paths to the font files
+            regular_font_path = os.path.join(base_dir, "DejaVuSans.ttf")
+            bold_font_path = os.path.join(base_dir, "DejaVuSans-Bold.ttf")
+            
+            # Register each font with its own file
+            pdfmetrics.registerFont(TTFont("DejaVuSans", regular_font_path))
+            pdfmetrics.registerFont(TTFont("DejaVuSans-Bold", bold_font_path))
+            
+            # Define the font family (optional but helpful for style inheritance)
             pdfmetrics.registerFontFamily(
-                "DejaVuSans", normal="DejaVuSans", bold="DejaVuSans-Bold",
+                "DejaVuSans",
+                normal="DejaVuSans",
+                bold="DejaVuSans-Bold",
             )
         except Exception as e:
             print(f"Warning: Could not register custom fonts: {e}")
