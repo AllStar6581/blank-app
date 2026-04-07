@@ -626,7 +626,7 @@ Avaks GeoService specializes in civilian UAVs and software for processing drone-
     {
         "company_name": "ChatBotShop",
         "company_contacts": "[company ceased operations]",
-        "company_contacts_link": null,
+        "company_contacts_link": None,
         "work_start_date": "11-2016",
         "work_end_date": "03-2017",
         "position_name": "Junior Python Developer",
