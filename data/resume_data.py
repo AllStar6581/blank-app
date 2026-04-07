@@ -4,21 +4,14 @@ resume_dict = {
     "expected_position": "Lead / Senior Backend Engineer",
     "email": "Kriminetz0810@gmail.com",
     "tel": "+77470305448",
-    # "website" : "aKriminetskiy.tk",
     "website": "https://kriminetskii.streamlit.app",
-    # "expected_salary": "",
-    # "photo" : "https://cdn-icons-png.flaticon.com/512/912/912214.png",
-    # "photo" : "https://cdn4.telegram-cdn.org/file/NxOGSQsiO05a9PFOwtFpI5dJpWyiVai6uJ87HqR7JiN4AVcZO4cDWcusdImsEQfvcIc_JVsVvP8jPL6PGkFisRK647J8DZU7G3-UtsYHZuDmqYnGDZy3zbeHMuB29eGeFzyBDmeFXpMT6V8qzd8lYabwwOJc6lntfQvohLRvRS3-bOyFeRlLDCXAyRb7uT-266FXhwjz8AHwPSmnL2efVO1baVFdmHa3kf8GP3Jzif4-wInsg_X2p9N1Wu-WHscajsY86r1Q7e4LY8VBzyVG_F5HhERgqSLZUHTSznZqKMTG6fe-Yn2hueSS2SK5MT0tkkAIe0mO2kb8jfmOoTJ36Q.jpg",
     "photo": "static/me.jpg",
-#     "about": """
-# Senior Backend Engineer with 9+ years of expertise in designing, building, and scaling robust Python-based systems. Specializes in translating business requirements into efficient, well-architected solutions using the C4 model, with a rigorous focus on software quality through comprehensive testing and static analysis. Combines backend development with DevOps practices to streamline delivery and reliability. Proven in leading backend teams to execute technical strategy and solve core business problems that drive measurable impact.
-#     """,
-    "about" : """
-Senior Backend Engineer with 9+ years of professional experience in server-side development, specializing in designing, building, and scaling high-load fintech and retail platforms from zero to production.
+    "about": """
+Senior Backend Engineer with 9+ years of experience designing, building, and scaling backend systems, primarily in fintech, retail, and geospatial domains. Strong track record of taking platforms from zero to production and supporting them under real-world load.
 
-Possesses deep expertise in Python, microservices architecture (C4 model), and the full DevOps lifecycle (CI/CD, monitoring, IaC). Technologically agnostic, with a proven ability to deliver using various stacks (Go, React, Flutter, PostgreSQL, RabbitMQ, Docker) as business requirements dictate.
+Deep expertise in Python, distributed systems, and microservices (C4 model), combined with hands-on DevOps experience across CI/CD, observability, and infrastructure automation. Technologically agnostic: comfortable working with Go, Kotlin, React, Flutter, PostgreSQL, RabbitMQ, and modern cloud-native tooling when it best serves the product.
 
-Experienced in Agile environments, leading technical initiatives, establishing quality standards, and mentoring team members. A proactive and business-oriented engineer focused on driving revenue through reliable systems and frequent, measurable releases
+Experienced in leading engineering initiatives, shaping technical direction, and raising the bar for code quality through testing, static analysis, and code review. Business-minded and impact-driven: focus on shipping reliable features frequently, improving core metrics, and enabling teams to move fast without sacrificing long-term maintainability.
 """,
     "contacts": [
         {
@@ -44,761 +37,688 @@ Experienced in Agile environments, leading technical initiatives, establishing q
         },
     ],
     "exp": [
-        {
-            # ❌✅
-            "company_name": "UMI Technologies Corp. (Philippines)",
-            "company_contacts": "umi.ph",
-            "company_contacts_link": "https://umi.ph",
-            "work_start_date": "10-2022",
-            "work_end_date": "11-2025",
-            "position_name": "Senior/Lead Backend Engineer",
-            "description": """
-            UMI is FinTech startup and online service with mobile app that aggregates services of multiple credit loan providers. 
-            As the first technical hire, I've architected and built the company's core BNPL aggregation platform backend from zero to production,
-            establishing the technical vision and infrastructure for the system that generated revenue(processed ₱1Mln in approved loans within its first two weeks).
-            Led technical hiring: screening, interviewing, and selection decisions for engineering candidates.
-            Drove cross-functional technical excellence by establishing quality standards adopted across backend, mobile, and analytics teams.
-            Always helped less experienced colleagues, provide mentoring to enhance team's overall expertise.
-            Positioned company for investment through comprehensive technical documentation and Due Diligence materials.
-            Scaled the system to support multiple partners before the company's closure in late 2025.
-            """,
-            "action_points": [
-                "Architected and implemented the core ~20 backend services successfully working in production",  # Что заархитектурил и придумал
-                # "", # Что разработал с нуля до прода
-                "Provided ~50 technical interviews, 4 engineers were hired",  # Как нанимал людей
-                "Provided mentoring, assisted with technical issues, consulted with less technically experienced colleagues, and taught new skills",  # Как менторил менее опытных коллег
-                "Designed and implemented a product knowledge-based LLM chatbot for technical support using RAG pipeline, qwen embedding, FIASS indexing",  # Как пилил RAG
-                "Implemented quality control and error monitoring into the development process",  # Как внедрил процессы контроля качества и слежки за ошибками
-                "Worked as a Backend, Fullstack, and DevOps engineer: from prototype to production, including infrastructure setup, CI/CD, monitoring, and fault-tolerance mechanisms",  # Как был dev ops и SysAdmin
-                "Eliminated deployment bottlenecks by creating a fully automated CI/CD pipeline from scratch, reducing release cycles from days to hours and enabling the team to ship features reliably and frequently",  # Переписать
-                "Secured investor confidence by producing exhaustive technical documentation for due diligence, covering system architecture, security protocols, and disaster recovery strategies",  # Как делал архитектурную документацию и Due Dillifence
-                "Provided load testing with infra preparation and results presentation for business",  # Как делал НТ и вкручивал мониторинг
-                # -------------------
-                # "Transformed business requirements into a scalable technical reality by designing and implementing a microservices architecture that handled 10+ backend services, enabling parallel development and system resilience.",
-                # "Eliminated deployment bottlenecks by creating a fully automated CI/CD pipeline from scratch, reducing release cycles from days to hours and enabling the team to ship features reliably and frequently.",
-                # "Increased system reliability by 40% through implementing comprehensive monitoring, alerting, and quality gates, dramatically reducing production incidents and mean time to resolution.",
-                # "Accelerated team productivity and code quality by instituting code review practices, test automation standards, and mentoring programs, enabling the successful onboarding and growth of new team members.",
-                # "Secured investor confidence by producing exhaustive technical documentation for due diligence, covering system architecture, security protocols, and disaster recovery strategies.",
-                # "Extended platform capabilities with AI-powered features using RAG architecture, demonstrating ability to integrate cutting-edge technologies to solve business problems."
-                # # ###
-                # "Created the backend of the system, each of ~15 BE services",
-                # "Deployed into production, system handles operations of 9 shops & 2 OLPs",
-                # "Operated also as Fullstack and DevOps engineer, from 0 to prod",
-                # "System made ₱ 1 MLN loan approved @ first 2 weeks in production",
-                # "Implemented code quality code review and CI standards over the organization",
-            ],
-            "responsibilities": [
-                "Technical Strategy",
-                "System Architecture",  # Архитектура и технические решения на бэкэнде
-                "Full-Stack Development",
-                "AI/ML Integration",  # Интеграция с LLM AI
-                "DevOps Engineering",
-                "Platform Reliability",  # Развёртывание, Системное администрирование, Поддержка CI-CD
-                "Technical Leadership",  # Контроль качества и техническое лидерство
-                "Quality Assurance",
-                "Process Improvement",  # Нововведенияв рабочий процесс
-                # "architecture", #
-                # "development", # Разработка бэкэнд и веб фронтенд
-                "Job applications CV screening",
-                "Technical interviewing",  # Техническое интервью и найм
-                "Deployment dev/prod",  #
-                "CI/CD configuration and maintaining",
-                "Mentoring",  # Помощь ближнему
-                "Code review",  # Код ревью
-                "DBA: setup, backup, restoring, replication",  # DBA, setup, backup, restore, replication
-            ],
-            "skills": [
-                "C4 model",
-                "LangChain",
-                "FastAPI",
-                {"name": "Python", "category": "Programming Languages"},
-                "RAG",
-                "FAISS",
-                "sentence-transformers",
-                "HuggingFace",
-                {"name": "JavaScript", "category": "Programming Languages"},
-                "React.js",
-                "Django",
-                "Django Rest Framework (DRF)",
-                {"name": "Golang", "category": "Programming Languages"},
-                {"name": "Dart", "category": "Programming Languages"},
-                "Flutter",
-                "Ansible",
-                "Linux",
-                {"name": "Bash", "category": "Programming Languages"},
-                "Streamlit",
-                "Docker",
-                "RabbitMQ",
-                "Postgresql",
-                "Firebase",
-                "AWS S3",
-                "Splunk",
-                "Sentry",
-                "Prometheus",
-                "Grafana",
-                "Hashicorp Vault",
-                {"name": "PromQL", "category": "Programming Languages"},
-                {"name": "Redis", "category": "Databases"},
-                "RPC",
-                "JsonRPC",
-                "websocket",
-                "pytest",
-                "vcrpy",
-                "BDD",
-                "Gherkin",
-                "unittest",
-                "behave-testing",
-                "gitlab-ci",
-                "pg_logical",
-                "SonarQube",
-                "Firebase",
-                "Elasticsearch",
-                "ELK",
-                {"name": "KQL", "category": "Programming Languages"},
-                "Filebeat",
-                "PowerBi",
-                "jsCPD",
-                "Precommit",
-                "SonarQube",
-                "UiAutomator2",
-                "playwright",
-                "nextcloud",
-                "nginx",
-                "appium",
-                {"name": "kotlin", "category": "Programming Languages"},
-                "pgbouncer",
-                "flowpipe",
-                "load testing",
-                "locust",
-                "mixtral",
-                "phi3",
-                "plantuml",
-                "Keycloak",
-                "coturn",
-            ],
-        },
-        {
-            # ❌❌ описание устарело, взять из русской версии
-            "company_name": "Innopolis University, refresher courses centre",
-            "company_contacts": "https://innopolis.university/dpo-courses/",
-            "company_contacts_link": "https://stc.innopolis.university",
-            "work_start_date": "05-2020",
-            "work_end_date": "11-2023",
-            "position_name": "Python course instructor for employees of companies",
-            "description": """
-            Developed materials and taught lectures on python programming for QA staff for "Ak Bars Technology Center". Course graduates are already working as middle/senoir testers and QA leads.
-            Prepared and conducted a course block for QA specialists and a course block for DevOps engineers.
-            Also provided "Python web development for advanced programmers" for employees of "Rostelekom"
-            To date, has already trained about 200+ new SE, QA and DevOps workers who are now working in the relevant field.
-            """,
-            "action_points": [
-                "Provided 7 courses for 4 companies on Python development, DevOps and QA",
-                "Trained more than 300 employees that now work as mid+ or higher",
-                "Provided not less than 180 webinars and created 3 course programs",
-            ],
-            "responsibilities": [
-                "Providing live webinars",
-                "Taking exams",
-                "Creating practical excercises",
-                "Creating course plans for some courses",
-            ],
-            "skills": [
-                "Python",
-                "pytest",
-                "unittest",
-                "Flask",
-                "Django",
-                "Django Rest Framework (DRF)",
-                "JavaScript",
-                "TeamCity",
-                "RabbitMQ",
-                "Redis",
-                "postgresql",
-                "Docker",
-                "nginx",
-                "docker-compose",
-                "postgresql",
-                "mongodb",
-                "pandas",
-                "sklearn",
-                "probstat",
-                "matplotlib",
-                "seaborn",
-                "machine lerning",
-                "neural networks",
-                "data analysis",
-                "streamlit",
-                "Ansible",
-                "TestRail",
-                "gitlab-ci",
-                "Elasticsearch",
-                "selenium",
-                "playwright",
-                "fiddler",
-                "postman",
-                "JavaScript",
-                "nginx",
-                "ELK",
-                "Sentry",
-            ],
-            "video_links": [
-                "https://youtu.be/L3JiJwwkECw",
-                "https://youtu.be/OGyDhKET7nA",
-                "https://youtu.be/x51PjXu4HxY",
-            ],
-        },
-        {
-            # ❌❌
-            "company_name": "Instamart Technologies",
-            "company_contacts": "SBERmarket / Kuper",
-            "company_contacts_link": "https://sbermarket.ru/instamart-technologies-it",
-            "work_start_date": "12-2021",
-            "work_end_date": "08-2022",
-            "position_name": "Python Developer",
-            "description": """
-            Kuper (SberMarket) is a part of SBER ecosystem: the tech giant in Russia.
-            
- 
-            * Developed a backend (with RestApi) of web services for internal use; Prototyping and development of web project architecture, development of database models
-            * Decomposed tasks, distributed tasks for team members (organized work for backend developers)
-            * Conducted ALL scrum events (Planning, retro, backlog review, ...)
-            * Conducted code reviews
-            * Trained/mentored less experienced colleagues
-            * Engaged in advising teams of contractors (including code reviews)
-            * Negotiated with developers of related teams on the technical implementation of service integration, described the documentation of the expected api
-            * Monitored already launched services
-            """,
-            "action_points": [
-                "Developed 5 internal services for employees",
-                "Provided all SCRUM activities",
-                "Distributed tasks for backend developers in the team",
-            ],
-            "responsibilities": [
-                "development",
-                "mentoring",
-                "code review",
-                "interaction with other teams within organisation",
-                "providing SCRUM events",
-                "distribute workload on backend devs",
-            ],
-            "skills": [
-                "Python",
-                "Django",
-                "Django Rest Framework (DRF)",
-                "FastAPI",
-                "Wagtail",
-                "Docker",
-                "Kubernetes",
-                "Postgresql",
-                "Rabbitmq",
-                "Redis",
-                "Kafka",
-                "grpc",
-                "keycloak",
-                "Nexus OSS",
-                "protobuf",
-                "Hashicorp Vault",
-                "fitz",
-                "Grafana",
-                "PromQL",
-                "Precommit",
-                "SonarQube",
-                "tox",
-                "gitlab-ci",
-                "NetworkX",
-                "treebeard",
-                "sentry",
-                "ELK",
-                "KQL",
-                "pytest",
-                "vcrpy",
-            ],
-        },
-        {
-            # ✅
-            "company_name": "Innopolis University, GIS centre",
-            "company_contacts": "Teleagronom project",
-            "company_contacts_link": "https://teleagronom.com",
-            "work_start_date": "11-2020",
-            "work_end_date": "04-2022",
-            "position_name": "Python Dveloper",
-            "description": """
-            GIS centre is research-and-develop part of Innopolis university that develops Geographical online systems.
-
-            Worked on two projects: KSDM and Teleagronom
-
-            KSDM:
-            1. Implemented the backend of a geographic information system for monitoring remote sensing data for government bodies of the subjects of the Volga Federal District.
-
-            Teleagronom:
-            1. Developed a backend for a system for predicting the occurrence of harmful objects and dates of field work in agricultural fields for the Ministry of Agriculture of Mordovia and agricultural enterprises.
-            2. Negotiated with third-party developers on the technical implementation of service integration, described the documentation of the expected api
-            3. Mentored less experienced colleagues, conducted code-reviews
-
-            project url: https://teleagronom.com
-            """,
-            "action_points": [
-                "Implemented geographic system that is used by federal government",
-                "Developed agricultural monitoring system",
-                "Negotiated and provided integration of system for business partners",
-                "Mentored less experienced colleagues",
-            ],
-            "responsibilities": [
-                "Development",
-                "unittests",
-                "CI/CD",
-                "Deployment",
-                "Mentoring",
-                "Code Review",
-                "Integrating services with third-party sides",
-                "Participatinng in negotiation with the 3rd party companies about integration details",
-            ],
-            "skills": [
-                "Python",
-                "Django",
-                "Django Rest Framework (DRF)",
-                "FastAPI",
-                "Asyncio",
-                "Aiohttp",
-                "keycloak",
-                "Airflow",
-                "postgresql",
-                "postGIS",
-                "celery",
-                "FastAPI",
-                "AWS S3",
-                "Docker",
-                "RabbitMQ",
-                "TestRail",
-                "Azure DevOps",
-                "pandas",
-                "matplotlib",
-                "seaborn",
-                "GeoPandas",
-                "Shapely",
-                "Fiona",
-                "tox",
-                "nginx",
-                "linux",
-                "bash",
-            ],
-        },
-        {
-            # ✅
-            "company_name": "Akvelon | Reddit | growth team",
-            "company_contacts": "akvelon.com",
-            "company_contacts_link": "https://akvelon.com",
-            "work_start_date": "06-2021",
-            "work_end_date": "10-2021",
-            "position_name": "Senior Python developer (contractor)",
-            "description": "Was contractor Backend SE for reddit.com. Implemented a centralized page indexing service. The service allows limited and prioritized indexing of reddit site pages for search results in google.",
-            "action_points": [
-                "Developed centralized page indexer (reddit)",
-            ],
-            "responsibilities": ["Development", "unittests", "CI/CD"],
-            "skills": [
-                "Python",
-                "Baseplate",
-                "Thrift",
-                "Redis",
-                "DroneCI",
-                "Docker",
-                "Pytest",
-                "Tilt",
-                "Kubernetes",
-                "Git",
-                "linux",
-                "bash",
-            ],
-        },
-        {
-            # ✅
-            "company_name": "X5 RETAIL GROUP | X5 TECH",
-            "company_contacts": "x5.ru/en",
-            "company_contacts_link": "https://www.x5.ru/en/",
-            "work_start_date": "01-2020",
-            "work_end_date": "06-2021",
-            "position_name": "Python developer",
-            "description": """
-            X5 retail group is the largest retail company with more than 16000 stores and 339000 employees all over Russia.
-
-            While working at X5 as software developer I:
-            1. Developed a set of highload asynchronous microservices for the company's omnichannel platform.
-            2. Implemented a centralized service for storing personal data and recording consents to the processing of data of customers who activate loyalty cards; Now the service is used as a storage of legal justifications for the processing of personal data.
-            3. Implemented integration with fast payment systems by qr-code of various banking operators;
-            4. Participated in the implementation of the SIM card pre-activation system at points of sale
-            5. Participated in the implementation of a system for accounting for current balances of goods in stores
-            6. Conducted SCRUM events in the team
-            """,
-            "action_points": [
-                "Created more than 10 microservices for omnichannel platform",
-                "Delivered system that handles more than 11 mln loyalty cards data",
-                "Developed high load systems for >5000 points of sales",
-            ],
-            "responsibilities": [
-                "Developing services for the platform",
-                "Integrating services with third-party sides",
-                "Participatinng in negotiation with the 3rd party companies about integration details",
-                "Creating monitoring dashboards and actively preventing breakdowns from high loads",
-                "Conducting SCRUM events",
-                "Code Review",
-            ],
-            "skills": [
-                "Python",
-                "Asyncio",
-                "Aiohttp",
-                "Redis",
-                "Django",
-                "Django Rest Framework (DRF)",
-                "Celery",
-                "sqlalchemy",
-                "AWS S3",
-                "Kafka",
-                "RabbitMQ",
-                "pytest",
-                "unittest",
-                "gitlab-ci",
-                "Docker",
-                "Docker-compose",
-                "Kubernetes",
-                "keycloak",
-                "OpenShift",
-                "OracleDB",
-                "IBM-MQ",
-                "black",
-                "isort",
-                "mypy",
-                "flake8",
-                "cookiecutter",
-                "bash",
-                "git",
-                "tox",
-                "SCRUM",
-                "linux",
-            ],
-        },
-        {
-            # ✅
-            "company_name": "InnoCamp",
-            "company_contacts": "innopoliscamp.ru",
-            "company_contacts_link": "https://innopoliscamp.ru",
-            "work_start_date": "12-2019",
-            "work_end_date": "06-2020",
-            "position_name": "Python course instructor",
-            "description": """
-                InnoCamp is a summer camp in Innopolis for teenagers who want to study computer science. 
-
-                Provided web-development python classes for teenagers (coding bootcamp).
-                """,
-            "action_points": [
-                "Some teenagers I trained have later become computer science university students",
-            ],
-            "responsibilities": [
-                "providing in-class lectures",
-                "preparing lecture materials (code examples, presentations)",
-            ],
-            "skills": [
-                "Python",
-                "Flask",
-                "postgresql",
-                "Telegram bot api",
-                "telethon",
-                "Jinja2",
-                "JavaScript",
-            ],
-        },
-        {
-            # ✅
-            "company_name": "Innopolis University",
-            "company_contacts": "innopolis.university",
-            "company_contacts_link": "https://innopolis.university/en/",
-            "work_start_date": "03-2019",
-            "work_end_date": "04-2020",
-            "position_name": "Teacher's assistant at Virtualization course in university",
-            "description": """
-            Developed a set of lectures and practical exercises on containerization tools provided by the linux kernel (namespaces,control groups), basics of docker, docker-compose, kubernetes. Taught those to master and bachelor programs' students.
-            
-            Links to lecture's presentation examples:
-            1. [Presentation: create your own container in C++](http://tinyurl.com/y5jkz3d6)
-            2. [Presentation: Cloud resource scheduling and power management](http://tinyurl.com/mrxharrj)
-            3. [Presentation: Docker internals, docker-compose and intro to kubernetes](http://tinyurl.com/33rmrvn9)
-
-            """,
-            "action_points": [
-                "Provided not less than 20 lectures in english (which is not my 1st language)",
-            ],
-            "responsibilities": [
-                "providing in-class lectures",
-                "preparing lecture materials (code examples, presentations)",
-                "Grading students' course works",
-            ],
-            "skills": [
-                "linux",
-                "Docker",
-                "Docker-Compose",
-                "K8s (Kubernetes)",
-                "Cloud architecture",
-                "bash",
-                "MS Azure",
-                "GCP",
-                "AWS",
-                "VMWare",
-                "LXC",
-            ],
-        },
-        {
-            # ✅
-            "company_name": "Innopolis University | Cloud technologies and virtualization lab",
-            "company_contacts": "AIForest Project",
-            "company_contacts_link": "https://ai.innopolis.university/aiforest/",
-            "work_start_date": "08-2018",
-            "work_end_date": "01-2020",
-            "position_name": "Python Software Engineer",
-            "description": """
-            Innopolis University has several Research-And-Development labs and centres. Cloud technologies lab by that time was implementing online cloud remote sensing platform which my system was integrated with.
-
-            I've made great contribution to create system forest change detection using data analysis from geospatioal images from satellites.
-            The system was produced for the government (Ministry of Forestry).
-
-            Along with writing the code, I was involved in deploying the solution, changing the architecture, managing the development team process and holding SCRUM events.
-            The created solution brought the university more than 6+ million rubles in 2019. The product is still used to generate income for the university.
-
-            LINKS TO PATENTS:
-            1. https://tinyurl.com/3m58mfmu
-            2. https://tinyurl.com/nwx2fuxy
-
-            link to project: https://ai.innopolis.university/aiforest/
-            
-            """,
-            "action_points": [
-                "Implemented service that processes >15Gb data daily",
-                "The service brought ₽6 mln to organization in first year",
-                "Held all SCRUM events",
-                "Got service integrated with bigger platform",
-                "Mentored one jr dev",
-            ],
-            "responsibilities": [
-                "Backend development",
-                "Integration with platform",
-                "Hosting SCRUM events",
-                "Collaborating with DevOps team",
-            ],
-            "skills": [
-                "Python",
-                "pandas",
-                "matplotlib",
-                "seaborn",
-                "data analysis",
-                "GeoPandas",
-                "Numpy",
-                "GDAL",
-                "QGis",
-                "pytest",
-                "Docker",
-                "RabbitMQ",
-                "LDAP",
-                "Nexus OSS",
-                "keycloak",
-                "Redis",
-                "Docker-compose",
-                "Azure cloud",
-                "Azure devops CI/CD",
-                "flake8",
-                "postgresql",
-                "postGIS",
-                "GeoServer",
-                "graphvis",
-                "grpc",
-                "protobuf",
-                "Ansible",
-                "awx",
-                "rasterio",
-                "pyshp/shapely",
-                "fiona",
-                "fmask",
-                "AWS S3",
-                "peewee",
-                "SCRUM",
-                "tox",
-                "linux",
-                "bash",
-            ],
-        },
-        {
-            "company_name": "Tinkoff technology centre",
-            "company_contacts": "tinkoff.ru",
-            "company_contacts_link": "https://www.tinkoff.ru/software/tcr/",
-            "work_start_date": "01-2018",
-            "work_end_date": "07-2018",
-            "position_name": "Python developer (internship)",
-            "description": """
-            Tinkoff (T-bank) is one of largest banks in Russia.
-            Created backend for web application (browser extension) used by help desk specialists.
-            The app uses python and nlu (natural language understanding).
-            """,
-            "action_points": [
-                "",
-            ],
-            "responsibilities": [
-                "Implementing web backend",
-                "Collecting train data for ml models",
-                "Training different npl models, comparing results (a/b)",
-                "Controlling the team's time tracking",
-            ],
-            "skills": [
-                "Python",
-                "nltk",
-                "jamspell",
-                "Docker",
-                "Docker-compose",
-                "Git",
-                "bash",
-                "NLP",
-                "NLU",
-                "CBow",
-                "Falcon",
-                "numpy",
-                "pandas",
-                "SCRUM",
-                "linux",
-            ],
-        },
-        {
-            # ✅
-            "company_name": "Avaks GeoService",
-            "company_contacts": "uav-siberia.com",
-            "company_contacts_link": "https://uav-siberia.com",
-            "work_start_date": "02-2017",
-            "work_end_date": "06-2017",
-            "position_name": "C++ developer (internship)",
-            "description": """
-            AVAKS GeoService specializez on non-military uav drones. 
-
-            Created module for analyzing telemetry from unmanned aerial vehicles and three-dimensional display of flight history.
-            The system was developed in C++ using Qt signals and Pangolin for 3D rendering.
-            """,
-            "action_points": [
-                "Got practice in programmatic work with 3D graphics",
-                "Got understanding in specifics of working with drones, UAV",
-            ],
-            "responsibilities": [
-                "adding new plugin to existing software",
-                "testing this plugin using real UAV flight data",
-            ],
-            "skills": [
-                "C++",
-                "Qt",
-                "CMake",
-                "Pangolin",
-                "OpenGL",
-                "CLion",
-                "Git",
-                "bash",
-                "linux",
-                "OOP",
-            ],
-        },
-        {
-            # ✅
-            "company_name": "ChatBotShop",
-            "company_contacts": "[the company ceased operations]",
-            "company_contacts_link": None,
-            "work_start_date": "11-2016",
-            "work_end_date": "03-2017",
-            "position_name": "jr Python developer",
-            "description": """
-            ChatBotShop was a web dev studio which specialized on website and chat bot development for business clients.
-
-            Worked on telegram chat-bot with django admin tool for customers from Israel. This bot was a pizza-ordering tool, which was not common by that time.
-            """,
-            "action_points": [
-                "Worked on bot for Israeli restaraunt",
-                "Had to work with i10n",
-            ],
-            "responsibilities": [
-                "Added new features",
-                "Estimated features to implement",
-            ],
-            "skills": [
-                "Python",
-                "Django",
-                "Django Rest Framework (DRF)",
-                "Celery",
-                "Postgresql",
-                "Telegram bot api",
-                "Viber bot api",
-                "PyCharm",
-                "Git",
-                "linux",
-                "OOP",
-            ],
-        },
-        {
-            # ✅
-            "company_name": "Novosibirsk academy of programming and design",
-            "company_contacts": "nadip.ru",
-            "company_contacts_link": "https://nadip.ru",
-            "work_start_date": "09-2016",
-            "work_end_date": "02-2017",
-            "position_name": "Python course instructor",
-            "description": """
-            Novosibirsk academy of programming is offline school teenagers who want to learn programming.
-
-            Created cource and provided classes for teenagers: '2d game development in python'. 2 classes a week for 12 students. 
-            """,
-            "action_points": [
-                "Produced brand new training course",  # "Produced brand new course for additional education club",
-                "Provided offline classes for 12 students",
-            ],
-            "responsibilities": [
-                "producing course materials",
-                "providing offline classes",
-                "Reviewing code, grading tasks",
-                "Giving feedback",
-            ],
-            "skills": [
-                "Python",
-                "PyGame",
-                "blender",
-                "blender game engine",
-                "Git",
-                "OOP",
-                "Code review",
-            ],
-        },
-        {
-            # ✅
-            "company_name": "Beward cctv systems",
-            "company_contacts": "beward.ru",
-            "company_contacts_link": "https://www.beward.ru",
-            "work_start_date": "06-2016",
-            "work_end_date": "08-2016",
-            "position_name": "Java Android intern",
-            "description": """
-            Beward is company that produces home security devices and software.
-
-            During my internship I have implemented 3 new screens for existing android app that was home cctv configuration app.
-            Got remote work experience with competent mentor.
-            """,
-            "action_points": [
-                "Got familiar with android components lifecycles, contexts, tools, UI principles",
-                "Used third party libs to get help with tasks",
-            ],
-            "responsibilities": [
-                "Got tasks from mentor, write code for them",
-                "Worked with feedback from mentor",
-            ],
-            "skills": [
-                "java",
-                "android",
-                "gradle",
-                "git",
-                "Android Studio",
-                "Genymotion",
-                "OOP",
-            ],
-        },
-    ],
+    {
+        "company_name": "UMI Technologies Corp. (Philippines)",
+        "company_contacts": "umi.ph",
+        "company_contacts_link": "https://umi.ph",
+        "work_start_date": "10-2022",
+        "work_end_date": "11-2025",
+        "position_name": "Senior / Lead Backend Engineer",
+        "description": """
+UMI is a Philippines-based fintech startup and BNPL aggregation platform that connects multiple lenders through a mobile app and web services. The company operated in a highly regulated environment, focusing on credit risk, underwriting quality, and payment reliability in an emerging market.
+""",
+        "action_points": [
+            "Architected and implemented the core backend platform (~20 microservices) from scratch, taking the system from prototype to stable production.",
+            "Launched the initial lending flow that processed approximately ₱1M in approved loans within the first two weeks of going live.",
+            "Conducted around 50 technical interviews and helped build an engineering team of 4 developers, including onboarding and mentoring.",
+            "Introduced code review practices, automated testing, and static analysis, significantly reducing production issues and improving release confidence.",
+            "Designed and shipped an LLM-based support chatbot using a RAG pipeline (Qwen embeddings + FAISS), reducing support load and improving response quality.",
+            "Implemented end-to-end observability (logging, metrics, alerting) with Prometheus, Grafana, Sentry, and ELK, shortening incident detection and resolution time.",
+            "Built a fully automated CI/CD pipeline from the ground up, reducing release cycles from several days to hours and enabling frequent, low-risk deployments.",
+            "Prepared architecture diagrams, security documentation, and disaster recovery materials for investor due diligence, increasing confidence in the technical platform.",
+            "Planned and executed load tests, presented performance results to business stakeholders, and provided recommendations for scaling and cost optimization.",
+        ],
+        "responsibilities": [
+            "Owning backend technical strategy and system architecture for the core BNPL aggregation platform.",
+            "Designing service boundaries, data flows, and integrations with external lending partners and internal products.",
+            "Delivering backend functionality end-to-end: requirements clarification, API design, implementation, testing, and production rollout.",
+            "Covering full-stack work for internal tools and admin panels when needed to unblock product delivery.",
+            "Leading DevOps initiatives: CI/CD setup, infrastructure configuration, monitoring and alerting, reliability and failover mechanisms.",
+            "Providing technical leadership: task breakdown and prioritization, mentoring engineers, and enforcing engineering best practices.",
+            "Driving process improvements in development workflow, code quality, and release management.",
+            "Participating in hiring: CV screening, technical interviewing, and final hiring recommendations.",
+            "Handling DBA responsibilities for core databases, including backups, restore procedures, and replication setup.",
+        ],
+        "skills": [
+            {"name": "C4 model", "category": "Architecture & Methodologies"},
+            {"name": "Microservices architecture", "category": "Architecture & Methodologies"},
+            {"name": "Technical strategy", "category": "Architecture & Methodologies"},
+            {"name": "FastAPI", "category": "Frameworks & Libraries"},
+            {"name": "Django", "category": "Frameworks & Libraries"},
+            {"name": "Django Rest Framework (DRF)", "category": "Frameworks & Libraries"},
+            {"name": "React.js", "category": "Frameworks & Libraries"},
+            {"name": "Streamlit", "category": "Frameworks & Libraries"},
+            {"name": "LangChain", "category": "Frameworks & Libraries"},
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "Go", "category": "Programming Languages"},
+            {"name": "Dart", "category": "Programming Languages"},
+            {"name": "JavaScript", "category": "Programming Languages"},
+            {"name": "RAG", "category": "AI & ML"},
+            {"name": "FAISS", "category": "AI & ML"},
+            {"name": "sentence-transformers", "category": "AI & ML"},
+            {"name": "HuggingFace", "category": "AI & ML"},
+            {"name": "PostgreSQL", "category": "Cloud & Databases"},
+            {"name": "Redis", "category": "Cloud & Databases"},
+            {"name": "Firebase", "category": "Cloud & Databases"},
+            {"name": "AWS S3", "category": "Cloud & Databases"},
+            {"name": "RabbitMQ", "category": "Messaging & Streaming"},
+            {"name": "RPC", "category": "Messaging & Streaming"},
+            {"name": "JsonRPC", "category": "Messaging & Streaming"},
+            {"name": "WebSocket", "category": "Messaging & Streaming"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "Ansible", "category": "DevOps & Infrastructure"},
+            {"name": "Linux", "category": "DevOps & Infrastructure"},
+            {"name": "Bash", "category": "DevOps & Infrastructure"},
+            {"name": "nginx", "category": "DevOps & Infrastructure"},
+            {"name": "Keycloak", "category": "DevOps & Infrastructure"},
+            {"name": "coturn", "category": "DevOps & Infrastructure"},
+            {"name": "GitLab CI", "category": "DevOps & Infrastructure"},
+            {"name": "pg_logical", "category": "DevOps & Infrastructure"},
+            {"name": "Prometheus", "category": "Monitoring & Observability"},
+            {"name": "Grafana", "category": "Monitoring & Observability"},
+            {"name": "Sentry", "category": "Monitoring & Observability"},
+            {"name": "Elasticsearch", "category": "Monitoring & Observability"},
+            {"name": "ELK stack", "category": "Monitoring & Observability"},
+            {"name": "Splunk", "category": "Monitoring & Observability"},
+            {"name": "PromQL", "category": "Monitoring & Observability"},
+            {"name": "KQL", "category": "Monitoring & Observability"},
+            {"name": "Filebeat", "category": "Monitoring & Observability"},
+            {"name": "Hashicorp Vault", "category": "Security"},
+            {"name": "Power BI", "category": "Analytics & BI"},
+            {"name": "Pre-commit", "category": "Quality & Testing"},
+            {"name": "SonarQube", "category": "Quality & Testing"},
+            {"name": "pytest", "category": "Quality & Testing"},
+            {"name": "unittest", "category": "Quality & Testing"},
+            {"name": "vcrpy", "category": "Quality & Testing"},
+            {"name": "BDD", "category": "Quality & Testing"},
+            {"name": "Gherkin", "category": "Quality & Testing"},
+            {"name": "behave-testing", "category": "Quality & Testing"},
+            {"name": "UiAutomator2", "category": "Quality & Testing"},
+            {"name": "Playwright", "category": "Quality & Testing"},
+            {"name": "Appium", "category": "Quality & Testing"},
+            {"name": "jsCPD", "category": "Quality & Testing"},
+            {"name": "load testing", "category": "Other Technical Skills"},
+            {"name": "Locust", "category": "Other Technical Skills"},
+            {"name": "plantuml", "category": "Tools & Platforms"},
+            {"name": "pgbouncer", "category": "DevOps & Infrastructure"},
+            {"name": "mixtral", "category": "AI & ML"},
+            {"name": "phi3", "category": "AI & ML"},
+            {"name": "Team leadership", "category": "Leadership & soft skills"},
+            {"name": "Mentoring", "category": "Leadership & soft skills"},
+            {"name": "Hiring & interviewing", "category": "Leadership & soft skills"},
+            {"name": "Stakeholder communication", "category": "Leadership & soft skills"},
+            {"name": "Ownership & accountability", "category": "Leadership & soft skills"},
+            {"name": "Working in ambiguity", "category": "Leadership & soft skills"},
+        ],
+    },
+    {
+        "company_name": "Innopolis University, Professional Development Center",
+        "company_contacts": "https://innopolis.university/dpo-courses/",
+        "company_contacts_link": "https://stc.innopolis.university",
+        "work_start_date": "05-2020",
+        "work_end_date": "11-2023",
+        "position_name": "Python / Backend / DevOps Instructor",
+        "description": """
+Innopolis University’s Professional Development Center delivers corporate training programs for large enterprises and public-sector organizations, including Ak Bars Technology Center, Rostelecom, and federal initiatives. Programs focus on upskilling software engineers, QA specialists, and DevOps engineers to mid-level and above.
+""",
+        "action_points": [
+            "Designed and delivered 7+ courses for 4 organizations on Python backend development, DevOps, QA, and data analysis / ML.",
+            "Trained 300+ professionals who went on to work as mid-level and senior engineers, QA leads, and DevOps specialists.",
+            "Ran 180+ live online sessions (lectures, labs, Q&A) and authored 3 complete course curricula with hands-on projects.",
+        ],
+        "responsibilities": [
+            "Designing course curricula and learning outcomes aligned with client needs and real-world engineering practices.",
+            "Delivering live webinars, practical labs, and Q&A sessions for mixed-experience cohorts.",
+            "Creating hands-on exercises, projects, and assessments that simulate real production scenarios.",
+            "Assessing student performance, grading assignments, and providing individualized feedback and recommendations.",
+        ],
+        "skills": [
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "Flask", "category": "Frameworks & Libraries"},
+            {"name": "Django", "category": "Frameworks & Libraries"},
+            {"name": "Django Rest Framework (DRF)", "category": "Frameworks & Libraries"},
+            {"name": "JavaScript", "category": "Programming Languages"},
+            {"name": "TeamCity", "category": "DevOps & Infrastructure"},
+            {"name": "RabbitMQ", "category": "Messaging & Streaming"},
+            {"name": "Redis", "category": "Cloud & Databases"},
+            {"name": "PostgreSQL", "category": "Cloud & Databases"},
+            {"name": "MongoDB", "category": "Cloud & Databases"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "docker-compose", "category": "DevOps & Infrastructure"},
+            {"name": "nginx", "category": "DevOps & Infrastructure"},
+            {"name": "pandas", "category": "AI & ML"},
+            {"name": "scikit-learn", "category": "AI & ML"},
+            {"name": "probability & statistics", "category": "AI & ML"},
+            {"name": "matplotlib", "category": "AI & ML"},
+            {"name": "seaborn", "category": "AI & ML"},
+            {"name": "machine learning", "category": "AI & ML"},
+            {"name": "neural networks", "category": "AI & ML"},
+            {"name": "data analysis", "category": "AI & ML"},
+            {"name": "Streamlit", "category": "Frameworks & Libraries"},
+            {"name": "Ansible", "category": "DevOps & Infrastructure"},
+            {"name": "TestRail", "category": "Quality & Testing"},
+            {"name": "GitLab CI", "category": "DevOps & Infrastructure"},
+            {"name": "Elasticsearch", "category": "Monitoring & Observability"},
+            {"name": "Selenium", "category": "Quality & Testing"},
+            {"name": "Playwright", "category": "Quality & Testing"},
+            {"name": "Fiddler", "category": "Tools & Platforms"},
+            {"name": "Postman", "category": "Tools & Platforms"},
+            {"name": "ELK stack", "category": "Monitoring & Observability"},
+            {"name": "Sentry", "category": "Monitoring & Observability"},
+            {"name": "Public speaking", "category": "Leadership & soft skills"},
+            {"name": "Technical training", "category": "Leadership & soft skills"},
+            {"name": "Curriculum design", "category": "Leadership & soft skills"},
+            {"name": "Simplifying complex concepts", "category": "Leadership & soft skills"},
+            {"name": "Group facilitation", "category": "Leadership & soft skills"},
+        ],
+        "video_links": [
+            "https://youtu.be/L3JiJwwkECw",
+            "https://youtu.be/OGyDhKET7nA",
+            "https://youtu.be/x51PjXu4HxY",
+        ],
+    },
+    {
+        "company_name": "Instamart Technologies",
+        "company_contacts": "SBERmarket / Kuper",
+        "company_contacts_link": "https://sbermarket.ru/instamart-technologies-it",
+        "work_start_date": "12-2021",
+        "work_end_date": "08-2022",
+        "position_name": "Python Developer",
+        "description": """
+Instamart (Kuper / SberMarket) is part of the Sber ecosystem and one of the largest online grocery and quick-commerce platforms in Russia. The company operates at scale with high availability requirements, supporting millions of orders and thousands of pickers, couriers, and store employees.
+""",
+        "action_points": [
+            "Developed 5 internal backend services and web tools that streamlined workflows for internal operations and support teams.",
+            "Led all core Scrum ceremonies (planning, refinement, reviews, retrospectives), improving delivery predictability and team alignment.",
+            "Decomposed and distributed work across backend engineers, balancing workload and accelerating feature delivery.",
+            "Performed code reviews for in-house and vendor teams, enforcing coding standards and architectural guidelines.",
+            "Mentored junior and mid-level developers, helping them ramp up on the stack and internal processes.",
+            "Coordinated with adjacent teams to define and document service-to-service integration contracts and APIs.",
+            "Monitored production services, participated in incident investigations, and contributed to stability improvements.",
+        ],
+        "responsibilities": [
+            "Backend development of internal services and APIs supporting the e-commerce and fulfillment platform.",
+            "Service and data model design, including integrations with existing microservice ecosystems.",
+            "Planning sprints, breaking down epics into deliverable tasks, and distributing workload within the team.",
+            "Facilitating Scrum events and maintaining transparency on progress and risks.",
+            "Conducting code reviews and upholding engineering quality standards.",
+            "Cross-team collaboration on technical integrations and troubleshooting.",
+            "Operational ownership of services in production, including basic on-call responsibilities.",
+        ],
+        "skills": [
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "Django", "category": "Frameworks & Libraries"},
+            {"name": "Django Rest Framework (DRF)", "category": "Frameworks & Libraries"},
+            {"name": "FastAPI", "category": "Frameworks & Libraries"},
+            {"name": "Wagtail", "category": "Frameworks & Libraries"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "Kubernetes", "category": "DevOps & Infrastructure"},
+            {"name": "PostgreSQL", "category": "Cloud & Databases"},
+            {"name": "RabbitMQ", "category": "Messaging & Streaming"},
+            {"name": "Redis", "category": "Cloud & Databases"},
+            {"name": "Kafka", "category": "Messaging & Streaming"},
+            {"name": "gRPC", "category": "Messaging & Streaming"},
+            {"name": "protobuf", "category": "Messaging & Streaming"},
+            {"name": "Keycloak", "category": "DevOps & Infrastructure"},
+            {"name": "Hashicorp Vault", "category": "Security"},
+            {"name": "Nexus OSS", "category": "Tools & Platforms"},
+            {"name": "Grafana", "category": "Monitoring & Observability"},
+            {"name": "PromQL", "category": "Monitoring & Observability"},
+            {"name": "Sentry", "category": "Monitoring & Observability"},
+            {"name": "ELK stack", "category": "Monitoring & Observability"},
+            {"name": "KQL", "category": "Monitoring & Observability"},
+            {"name": "Pre-commit", "category": "Quality & Testing"},
+            {"name": "SonarQube", "category": "Quality & Testing"},
+            {"name": "pytest", "category": "Quality & Testing"},
+            {"name": "vcrpy", "category": "Quality & Testing"},
+            {"name": "GitLab CI", "category": "DevOps & Infrastructure"},
+            {"name": "NetworkX", "category": "Other Technical Skills"},
+            {"name": "treebeard", "category": "Other Technical Skills"},
+            {"name": "Process facilitation", "category": "Leadership & soft skills"},
+            {"name": "Mentoring", "category": "Leadership & soft skills"},
+            {"name": "Cross-team communication", "category": "Leadership & soft skills"},
+            {"name": "Owning quality", "category": "Leadership & soft skills"},
+        ],
+    },
+    {
+        "company_name": "Innopolis University, GIS Centre",
+        "company_contacts": "Teleagronom project",
+        "company_contacts_link": "https://teleagronom.com",
+        "work_start_date": "11-2020",
+        "work_end_date": "04-2022",
+        "position_name": "Python Developer",
+        "description": """
+The GIS Centre at Innopolis University focuses on research and development of geospatial web systems for government and enterprise clients. Key projects included a remote-sensing monitoring system for government agencies and an agricultural decision-support platform for regional authorities and agribusinesses.
+""",
+        "action_points": [
+            "Implemented the backend for KSDM, a government-facing GIS used to monitor remote-sensing data across the Volga Federal District.",
+            "Developed the backend of Teleagronom, a system predicting pest outbreaks and recommending field work schedules for the Ministry of Agriculture of Mordovia and local agribusinesses.",
+            "Led technical discussions and API design for integrations with third-party systems, then implemented and maintained those integrations.",
+            "Mentored junior developers and performed regular code reviews to maintain code quality.",
+        ],
+        "responsibilities": [
+            "Backend development for GIS products, including data APIs and processing services.",
+            "Authoring and maintaining automated tests and CI/CD pipelines for project components.",
+            "Deploying services to on-prem and cloud environments, troubleshooting issues in production.",
+            "Coordinating integrations and technical details with external vendor teams.",
+            "Supporting junior engineers and contributing to team-level best practices.",
+        ],
+        "skills": [
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "Django", "category": "Frameworks & Libraries"},
+            {"name": "Django Rest Framework (DRF)", "category": "Frameworks & Libraries"},
+            {"name": "FastAPI", "category": "Frameworks & Libraries"},
+            {"name": "Asyncio", "category": "Programming Languages"},
+            {"name": "Aiohttp", "category": "Frameworks & Libraries"},
+            {"name": "Keycloak", "category": "DevOps & Infrastructure"},
+            {"name": "Airflow", "category": "DevOps & Infrastructure"},
+            {"name": "PostgreSQL", "category": "Cloud & Databases"},
+            {"name": "PostGIS", "category": "Cloud & Databases"},
+            {"name": "Celery", "category": "Messaging & Streaming"},
+            {"name": "AWS S3", "category": "Cloud & Databases"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "RabbitMQ", "category": "Messaging & Streaming"},
+            {"name": "TestRail", "category": "Quality & Testing"},
+            {"name": "Azure DevOps", "category": "DevOps & Infrastructure"},
+            {"name": "pandas", "category": "AI & ML"},
+            {"name": "matplotlib", "category": "AI & ML"},
+            {"name": "seaborn", "category": "AI & ML"},
+            {"name": "GeoPandas", "category": "AI & ML"},
+            {"name": "Shapely", "category": "AI & ML"},
+            {"name": "Fiona", "category": "AI & ML"},
+            {"name": "tox", "category": "Quality & Testing"},
+            {"name": "nginx", "category": "DevOps & Infrastructure"},
+            {"name": "Linux", "category": "DevOps & Infrastructure"},
+            {"name": "Bash", "category": "DevOps & Infrastructure"},
+            {"name": "Mentoring", "category": "Leadership & soft skills"},
+            {"name": "Government client communication", "category": "Leadership & soft skills"},
+        ],
+    },
+    {
+        "company_name": "Akvelon | Reddit | Growth Team",
+        "company_contacts": "akvelon.com",
+        "company_contacts_link": "https://akvelon.com",
+        "work_start_date": "06-2021",
+        "work_end_date": "10-2021",
+        "position_name": "Senior Python Developer (Contractor)",
+        "description": """
+Akvelon is a consulting and outsourcing company serving major technology clients. As a backend contractor for Reddit’s Growth team, I contributed to infrastructure that improved how Reddit content was indexed and surfaced in external search engines.
+""",
+        "action_points": [
+            "Developed a centralized page indexing service for Reddit, enforcing prioritization and rate limits to optimize how pages are crawled for Google search.",
+            "Integrated the service into Reddit’s existing infrastructure (Baseplate, Thrift, Kubernetes), ensuring production readiness and reliability.",
+        ],
+        "responsibilities": [
+            "Implementing backend logic and services in close collaboration with Reddit engineers.",
+            "Writing unit tests and maintaining code quality according to Reddit’s internal standards.",
+            "Participating in CI/CD workflows and deployments to staging and production environments.",
+        ],
+        "skills": [
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "Baseplate", "category": "Frameworks & Libraries"},
+            {"name": "Thrift", "category": "Messaging & Streaming"},
+            {"name": "Redis", "category": "Cloud & Databases"},
+            {"name": "DroneCI", "category": "DevOps & Infrastructure"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "pytest", "category": "Quality & Testing"},
+            {"name": "Tilt", "category": "DevOps & Infrastructure"},
+            {"name": "Kubernetes", "category": "DevOps & Infrastructure"},
+            {"name": "Git", "category": "DevOps & Infrastructure"},
+            {"name": "Linux", "category": "DevOps & Infrastructure"},
+            {"name": "Bash", "category": "DevOps & Infrastructure"},
+            {"name": "Distributed teams", "category": "Leadership & soft skills"},
+            {"name": "English communication", "category": "Leadership & soft skills"},
+        ],
+    },
+    {
+        "company_name": "X5 Retail Group | X5 Tech",
+        "company_contacts": "x5.ru/en",
+        "company_contacts_link": "https://www.x5.ru/en/",
+        "work_start_date": "01-2020",
+        "work_end_date": "06-2021",
+        "position_name": "Python Developer",
+        "description": """
+X5 Retail Group is the largest grocery retailer in Russia, operating ~16,000 stores and serving millions of customers daily. X5 Tech develops the company’s omnichannel platform, loyalty systems, payment integrations, and real-time inventory services.
+""",
+        "action_points": [
+            "Built 10+ asynchronous microservices for the omnichannel platform supporting customer journeys across online and offline channels.",
+            "Delivered a centralized consent management service that now stores legal grounds and opt-ins for over 11 million loyalty cards.",
+            "Contributed to high-load services used by 5,000+ retail locations, including QR-based fast payment integrations and real-time stock tracking.",
+        ],
+        "responsibilities": [
+            "Developing and maintaining microservices for the omnichannel platform, loyalty, and payments.",
+            "Designing and integrating APIs with internal systems and external payment providers.",
+            "Participating in technical discussions and workshops with partners on integration details.",
+            "Building monitoring dashboards and proactively addressing incidents related to high load.",
+            "Taking part in Scrum ceremonies and contributing to planning and retrospectives.",
+            "Performing code reviews and helping enforce engineering standards across the team.",
+        ],
+        "skills": [
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "Asyncio", "category": "Programming Languages"},
+            {"name": "Aiohttp", "category": "Frameworks & Libraries"},
+            {"name": "Redis", "category": "Cloud & Databases"},
+            {"name": "Django", "category": "Frameworks & Libraries"},
+            {"name": "Django Rest Framework (DRF)", "category": "Frameworks & Libraries"},
+            {"name": "Celery", "category": "Messaging & Streaming"},
+            {"name": "SQLAlchemy", "category": "Cloud & Databases"},
+            {"name": "AWS S3", "category": "Cloud & Databases"},
+            {"name": "Kafka", "category": "Messaging & Streaming"},
+            {"name": "RabbitMQ", "category": "Messaging & Streaming"},
+            {"name": "pytest", "category": "Quality & Testing"},
+            {"name": "unittest", "category": "Quality & Testing"},
+            {"name": "GitLab CI", "category": "DevOps & Infrastructure"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "docker-compose", "category": "DevOps & Infrastructure"},
+            {"name": "Kubernetes", "category": "DevOps & Infrastructure"},
+            {"name": "Keycloak", "category": "DevOps & Infrastructure"},
+            {"name": "OpenShift", "category": "DevOps & Infrastructure"},
+            {"name": "OracleDB", "category": "Cloud & Databases"},
+            {"name": "IBM MQ", "category": "Messaging & Streaming"},
+            {"name": "black", "category": "Quality & Testing"},
+            {"name": "isort", "category": "Quality & Testing"},
+            {"name": "mypy", "category": "Quality & Testing"},
+            {"name": "flake8", "category": "Quality & Testing"},
+            {"name": "cookiecutter", "category": "Tools & Platforms"},
+            {"name": "Bash", "category": "DevOps & Infrastructure"},
+            {"name": "Git", "category": "DevOps & Infrastructure"},
+            {"name": "tox", "category": "Quality & Testing"},
+            {"name": "Scrum", "category": "Architecture & Methodologies"},
+            {"name": "Linux", "category": "DevOps & Infrastructure"},
+            {"name": "High-load systems", "category": "Leadership & soft skills"},
+            {"name": "Vendor collaboration", "category": "Leadership & soft skills"},
+        ],
+    },
+    {
+        "company_name": "InnoCamp",
+        "company_contacts": "innopoliscamp.ru",
+        "company_contacts_link": "https://innopoliscamp.ru",
+        "work_start_date": "12-2019",
+        "work_end_date": "06-2020",
+        "position_name": "Python Course Instructor",
+        "description": """
+InnoCamp is a technology-focused summer camp in Innopolis for teenagers interested in computer science and software engineering. Programs are designed as intensive bootcamps with hands-on coding projects.
+""",
+        "action_points": [
+            "Designed and delivered an intensive web development course in Python for teenagers.",
+            "Helped students build their first end-to-end web projects and understand core CS concepts.",
+            "Several students later enrolled in university-level computer science programs.",
+        ],
+        "responsibilities": [
+            "Preparing teaching materials, including examples, slides, and homework assignments.",
+            "Delivering in-person classes and supporting students through practical exercises.",
+            "Reviewing code, grading assignments, and providing constructive feedback.",
+        ],
+        "skills": [
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "Flask", "category": "Frameworks & Libraries"},
+            {"name": "PostgreSQL", "category": "Cloud & Databases"},
+            {"name": "Telegram Bot API", "category": "Frameworks & Libraries"},
+            {"name": "telethon", "category": "Frameworks & Libraries"},
+            {"name": "Jinja2", "category": "Frameworks & Libraries"},
+            {"name": "JavaScript", "category": "Programming Languages"},
+            {"name": "Teaching", "category": "Leadership & soft skills"},
+            {"name": "Working with teenagers", "category": "Leadership & soft skills"},
+        ],
+    },
+    {
+        "company_name": "Innopolis University",
+        "company_contacts": "innopolis.university",
+        "company_contacts_link": "https://innopolis.university/en/",
+        "work_start_date": "03-2019",
+        "work_end_date": "04-2020",
+        "position_name": "Teaching Assistant – Virtualization Course",
+        "description": """
+Innopolis University is a specialized computer science university with English-taught programs. The Virtualization course covers Linux kernel primitives, containerization, and cloud infrastructure fundamentals.
+""",
+        "action_points": [
+            "Delivered 20+ lectures and lab sessions in English on Linux namespaces/cgroups, Docker, and Kubernetes.",
+            "Designed hands-on lab assignments for building minimal containers and working with container orchestration tools.",
+            "Assessed student projects and provided detailed feedback on implementation and architecture.",
+        ],
+        "responsibilities": [
+            "Preparing lecture and lab materials on virtualization and containerization.",
+            "Teaching in-class sessions and guiding students through practical exercises.",
+            "Grading coursework and advising students on improvements.",
+        ],
+        "skills": [
+            {"name": "Linux", "category": "DevOps & Infrastructure"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "docker-compose", "category": "DevOps & Infrastructure"},
+            {"name": "Kubernetes", "category": "DevOps & Infrastructure"},
+            {"name": "Cloud architecture", "category": "Architecture & Methodologies"},
+            {"name": "Bash", "category": "DevOps & Infrastructure"},
+            {"name": "Microsoft Azure", "category": "Cloud & Databases"},
+            {"name": "Google Cloud Platform", "category": "Cloud & Databases"},
+            {"name": "AWS", "category": "Cloud & Databases"},
+            {"name": "VMware", "category": "Cloud & Databases"},
+            {"name": "LXC", "category": "DevOps & Infrastructure"},
+            {"name": "Teaching in English", "category": "Leadership & soft skills"},
+            {"name": "Public speaking", "category": "Leadership & soft skills"},
+        ],
+    },
+    {
+        "company_name": "Innopolis University | Cloud Technologies & Virtualization Lab",
+        "company_contacts": "AIForest Project",
+        "company_contacts_link": "https://ai.innopolis.university/aiforest/",
+        "work_start_date": "08-2018",
+        "work_end_date": "01-2020",
+        "position_name": "Python Software Engineer",
+        "description": """
+The Cloud Technologies Lab at Innopolis University builds cloud-based remote sensing platforms and ML-powered services for government and enterprise. AIForest is a forest change detection system built for the Ministry of Forestry of the Republic of Tatarstan, using satellite imagery and geospatial analytics.
+""",
+        "action_points": [
+            "Implemented backend services processing 15+ GB of geospatial data per day for forest change detection.",
+            "Contributed to a solution that generated over 6M RUB in revenue for the university in its first year.",
+            "Integrated the AIForest service into the broader cloud remote sensing platform.",
+            "Facilitated Scrum ceremonies and supported process organization within the team.",
+            "Mentored a junior developer and helped define a clear growth path.",
+        ],
+        "responsibilities": [
+            "Backend development for geospatial analytics services and APIs.",
+            "Integrating services with the remote sensing platform and other lab projects.",
+            "Hosting Scrum events and coordinating delivery within the team.",
+            "Collaborating with DevOps engineers on deployment and infrastructure topics.",
+        ],
+        "skills": [
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "pandas", "category": "AI & ML"},
+            {"name": "matplotlib", "category": "AI & ML"},
+            {"name": "seaborn", "category": "AI & ML"},
+            {"name": "data analysis", "category": "AI & ML"},
+            {"name": "GeoPandas", "category": "AI & ML"},
+            {"name": "NumPy", "category": "AI & ML"},
+            {"name": "GDAL", "category": "AI & ML"},
+            {"name": "QGIS", "category": "AI & ML"},
+            {"name": "pytest", "category": "Quality & Testing"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "RabbitMQ", "category": "Messaging & Streaming"},
+            {"name": "LDAP", "category": "Security"},
+            {"name": "Nexus OSS", "category": "Tools & Platforms"},
+            {"name": "Keycloak", "category": "DevOps & Infrastructure"},
+            {"name": "Redis", "category": "Cloud & Databases"},
+            {"name": "docker-compose", "category": "DevOps & Infrastructure"},
+            {"name": "Azure", "category": "Cloud & Databases"},
+            {"name": "Azure DevOps CI/CD", "category": "DevOps & Infrastructure"},
+            {"name": "flake8", "category": "Quality & Testing"},
+            {"name": "PostgreSQL", "category": "Cloud & Databases"},
+            {"name": "PostGIS", "category": "Cloud & Databases"},
+            {"name": "GeoServer", "category": "AI & ML"},
+            {"name": "graphviz", "category": "Tools & Platforms"},
+            {"name": "gRPC", "category": "Messaging & Streaming"},
+            {"name": "protobuf", "category": "Messaging & Streaming"},
+            {"name": "Ansible", "category": "DevOps & Infrastructure"},
+            {"name": "AWX", "category": "DevOps & Infrastructure"},
+            {"name": "rasterio", "category": "AI & ML"},
+            {"name": "Shapely", "category": "AI & ML"},
+            {"name": "Fiona", "category": "AI & ML"},
+            {"name": "fmask", "category": "AI & ML"},
+            {"name": "AWS S3", "category": "Cloud & Databases"},
+            {"name": "peewee", "category": "Cloud & Databases"},
+            {"name": "Scrum", "category": "Architecture & Methodologies"},
+            {"name": "tox", "category": "Quality & Testing"},
+            {"name": "Linux", "category": "DevOps & Infrastructure"},
+            {"name": "Bash", "category": "DevOps & Infrastructure"},
+            {"name": "Working with government clients", "category": "Leadership & soft skills"},
+            {"name": "Process organization", "category": "Leadership & soft skills"},
+        ],
+    },
+    {
+        "company_name": "Tinkoff Technology Centre",
+        "company_contacts": "tinkoff.ru",
+        "company_contacts_link": "https://www.tinkoff.ru/software/tcr/",
+        "work_start_date": "01-2018",
+        "work_end_date": "07-2018",
+        "position_name": "Python Developer (Internship / Thesis Project)",
+        "description": """
+Tinkoff (T-Bank) is one of the largest digital banks in Russia. The Technology Centre builds internal tools and customer-facing products that support a fully online banking model.
+""",
+        "action_points": [
+            "Developed the backend for a browser-extension-like web tool used by help desk specialists to correct customer-input errors using NLU.",
+            "Collected and prepared training datasets for several NLP models used in the prototype.",
+            "Trained and compared multiple models (including CBOW-based approaches) and selected the best-performing one.",
+        ],
+        "responsibilities": [
+            "Implementing backend APIs used by internal support tools.",
+            "Gathering text data and preparing it for NLP model training.",
+            "Experimenting with model configurations and evaluating them via A/B-style comparisons.",
+            "Participating in Scrum ceremonies and tracking progress.",
+        ],
+        "skills": [
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "nltk", "category": "AI & ML"},
+            {"name": "jamspell", "category": "AI & ML"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "docker-compose", "category": "DevOps & Infrastructure"},
+            {"name": "Git", "category": "DevOps & Infrastructure"},
+            {"name": "Bash", "category": "DevOps & Infrastructure"},
+            {"name": "NLP", "category": "AI & ML"},
+            {"name": "NLU", "category": "AI & ML"},
+            {"name": "CBOW", "category": "AI & ML"},
+            {"name": "Falcon", "category": "Frameworks & Libraries"},
+            {"name": "NumPy", "category": "AI & ML"},
+            {"name": "pandas", "category": "AI & ML"},
+            {"name": "Scrum", "category": "Architecture & Methodologies"},
+            {"name": "Linux", "category": "DevOps & Infrastructure"},
+        ],
+    },
+    {
+        "company_name": "Avaks GeoService",
+        "company_contacts": "uav-siberia.com",
+        "company_contacts_link": "https://uav-siberia.com",
+        "work_start_date": "02-2017",
+        "work_end_date": "06-2017",
+        "position_name": "C++ Developer (Internship)",
+        "description": """
+Avaks GeoService specializes in civilian UAVs and software for processing drone-collected data. The company builds solutions for surveying, mapping, and aerial monitoring.
+""",
+        "action_points": [
+            "Implemented a plugin for the existing UAV control software to analyze telemetry and render 3D flight paths.",
+            "Tested the plugin using real UAV flight data and refined algorithms based on results.",
+        ],
+        "responsibilities": [
+            "Extending the existing C++/Qt-based application with new functionality.",
+            "Working with telemetry data and 3D rendering in a production-like environment.",
+        ],
+        "skills": [
+            {"name": "C++", "category": "Programming Languages"},
+            {"name": "Qt", "category": "Frameworks & Libraries"},
+            {"name": "CMake", "category": "Tools & Platforms"},
+            {"name": "Pangolin", "category": "Frameworks & Libraries"},
+            {"name": "OpenGL", "category": "Other Technical Skills"},
+            {"name": "CLion", "category": "Tools & Platforms"},
+            {"name": "Git", "category": "DevOps & Infrastructure"},
+            {"name": "Bash", "category": "DevOps & Infrastructure"},
+            {"name": "Linux", "category": "DevOps & Infrastructure"},
+            {"name": "OOP", "category": "Other Technical Skills"},
+        ],
+    },
+    {
+        "company_name": "ChatBotShop",
+        "company_contacts": "[company ceased operations]",
+        "company_contacts_link": null,
+        "work_start_date": "11-2016",
+        "work_end_date": "03-2017",
+        "position_name": "Junior Python Developer",
+        "description": """
+ChatBotShop was a small web studio focused on building websites and chatbots for SMEs. Projects included early chatbot solutions for restaurants and local businesses.
+""",
+        "action_points": [
+            "Built features for a Telegram-based ordering bot and admin panel for a restaurant client in Israel.",
+            "Implemented internationalization (i18n) support for a multi-language chatbot and admin interface.",
+        ],
+        "responsibilities": [
+            "Implementing new features in chatbots and Django admin tools.",
+            "Estimating tasks and discussing scope and timelines with the team.",
+        ],
+        "skills": [
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "Django", "category": "Frameworks & Libraries"},
+            {"name": "Django Rest Framework (DRF)", "category": "Frameworks & Libraries"},
+            {"name": "Celery", "category": "Messaging & Streaming"},
+            {"name": "PostgreSQL", "category": "Cloud & Databases"},
+            {"name": "Telegram Bot API", "category": "Frameworks & Libraries"},
+            {"name": "Viber Bot API", "category": "Frameworks & Libraries"},
+            {"name": "PyCharm", "category": "Tools & Platforms"},
+            {"name": "Git", "category": "DevOps & Infrastructure"},
+            {"name": "Linux", "category": "DevOps & Infrastructure"},
+            {"name": "OOP", "category": "Other Technical Skills"},
+            {"name": "Client communication", "category": "Leadership & soft skills"},
+            {"name": "Estimating work", "category": "Leadership & soft skills"},
+        ],
+    },
+    {
+        "company_name": "Novosibirsk Academy of Programming and Design",
+        "company_contacts": "nadip.ru",
+        "company_contacts_link": "https://nadip.ru",
+        "work_start_date": "09-2016",
+        "work_end_date": "02-2017",
+        "position_name": "Python Course Instructor",
+        "description": """
+Novosibirsk Academy of Programming and Design is an after-school program for teenagers interested in programming and digital skills. Courses are focused on practical, project-based learning.
+""",
+        "action_points": [
+            "Designed and launched a new course on 2D game development in Python for a group of ~12 students.",
+            "Delivered in-person classes twice a week, guiding students from basics to working games.",
+        ],
+        "responsibilities": [
+            "Creating course content and lesson plans.",
+            "Teaching classes and supporting students during lab work.",
+            "Reviewing code, grading assignments, and giving actionable feedback.",
+        ],
+        "skills": [
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "PyGame", "category": "Frameworks & Libraries"},
+            {"name": "Blender", "category": "Tools & Platforms"},
+            {"name": "Blender Game Engine", "category": "Tools & Platforms"},
+            {"name": "Git", "category": "DevOps & Infrastructure"},
+            {"name": "OOP", "category": "Other Technical Skills"},
+            {"name": "Code review", "category": "Quality & Testing"},
+            {"name": "Teaching", "category": "Leadership & soft skills"},
+        ],
+    },
+    {
+        "company_name": "Beward CCTV Systems",
+        "company_contacts": "beward.ru",
+        "company_contacts_link": "https://www.beward.ru",
+        "work_start_date": "06-2016",
+        "work_end_date": "08-2016",
+        "position_name": "Java Android Intern",
+        "description": """
+Beward is a manufacturer of video surveillance hardware and software for home and enterprise security. The Android app I worked on was used to configure and manage CCTV systems.
+""",
+        "action_points": [
+            "Implemented three new screens in an existing Android application for configuring CCTV systems.",
+            "Got hands-on experience with Android component lifecycles, contexts, and UI design principles.",
+            "Integrated third-party libraries to support additional use cases in the app.",
+        ],
+        "responsibilities": [
+            "Delivering features assigned by a senior mentor and updating the app accordingly.",
+            "Iterating on feedback from code reviews and improving implementation quality.",
+        ],
+        "skills": [
+            {"name": "Java", "category": "Programming Languages"},
+            {"name": "Android", "category": "Frameworks & Libraries"},
+            {"name": "Gradle", "category": "Tools & Platforms"},
+            {"name": "Git", "category": "DevOps & Infrastructure"},
+            {"name": "Android Studio", "category": "Tools & Platforms"},
+            {"name": "Genymotion", "category": "Tools & Platforms"},
+            {"name": "OOP", "category": "Other Technical Skills"},
+            {"name": "Working with feedback", "category": "Leadership & soft skills"},
+            {"name": "Self-learning", "category": "Leadership & soft skills"},
+        ],
+    },
+],
     "edu": [
         {
             "degree": "Master of Science in IT - Software Engineering",
@@ -822,7 +742,6 @@ Experienced in Agile environments, leading technical initiatives, establishing q
     "spoken_languages": [
         {"name": "English", "level": "C1"},
         {"name": "Polish", "level": "A2"},
-        # {"name": "InterSlavic", "level" : "A2"},
         {"name": "Russian", "level": "Native"},
     ],
     "projects": [
