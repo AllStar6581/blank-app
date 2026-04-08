@@ -620,16 +620,18 @@ def _render_experience(resume_page, language, L_):
             )
             st.write(f"{exp.work_start_date_object.strftime('%b %Y')} - {end_date_str}")
 
-            for pt in exp.action_points or []:
-                st.markdown(f"- {pt}")
+            if exp.description:
+                st.markdown(exp.description)
 
             if exp.responsibilities:
                 st.markdown(L_("#### Responsibilities"))
                 for res in exp.responsibilities:
                     st.markdown(f"- {res}")
 
-            if exp.description:
-                st.markdown(exp.description)
+            if exp.action_points:
+                st.markdown(L_("#### Results"))
+                for pt in exp.action_points or []:
+                    st.markdown(f"- {pt}")
 
             if exp.video_links:
                 if _EXPERIMENTAL_VIDEO_CAROUSEL and len(exp.video_links) > 1:

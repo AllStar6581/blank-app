@@ -45,30 +45,30 @@ Experienced in leading engineering initiatives, shaping technical direction, and
         "work_end_date": "11-2025",
         "position_name": "Senior / Lead Backend Engineer",
         "description": """
-UMI is a Philippines-based fintech startup and BNPL aggregation platform that connects multiple lenders through a mobile app and web services. The company operated in a highly regulated environment, focusing on credit risk, underwriting quality, and payment reliability in an emerging market.
+UMI is a Philippines-based fintech startup and BNPL aggregation platform that connects multiple lenders through a mobile and web experience. The platform operates in a highly regulated environment, with a strong focus on credit risk, underwriting quality, and payment reliability in an emerging market.
 """,
-        "action_points": [
-            "Architected and implemented the core backend platform (~20 microservices) from scratch, taking the system from prototype to stable production.",
-            "Launched the initial lending flow that processed approximately ₱1M in approved loans within the first two weeks of going live.",
-            "Conducted around 50 technical interviews and helped build an engineering team of 4 developers, including onboarding and mentoring.",
-            "Introduced code review practices, automated testing, and static analysis, significantly reducing production issues and improving release confidence.",
-            "Designed and shipped an LLM-based support chatbot using a RAG pipeline (Qwen embeddings + FAISS), reducing support load and improving response quality.",
-            "Implemented end-to-end observability (logging, metrics, alerting) with Prometheus, Grafana, Sentry, and ELK, shortening incident detection and resolution time.",
-            "Built a fully automated CI/CD pipeline from the ground up, reducing release cycles from several days to hours and enabling frequent, low-risk deployments.",
-            "Prepared architecture diagrams, security documentation, and disaster recovery materials for investor due diligence, increasing confidence in the technical platform.",
-            "Planned and executed load tests, presented performance results to business stakeholders, and provided recommendations for scaling and cost optimization.",
-        ],
-        "responsibilities": [
-            "Owning backend technical strategy and system architecture for the core BNPL aggregation platform.",
-            "Designing service boundaries, data flows, and integrations with external lending partners and internal products.",
-            "Delivering backend functionality end-to-end: requirements clarification, API design, implementation, testing, and production rollout.",
-            "Covering full-stack work for internal tools and admin panels when needed to unblock product delivery.",
-            "Leading DevOps initiatives: CI/CD setup, infrastructure configuration, monitoring and alerting, reliability and failover mechanisms.",
-            "Providing technical leadership: task breakdown and prioritization, mentoring engineers, and enforcing engineering best practices.",
-            "Driving process improvements in development workflow, code quality, and release management.",
-            "Participating in hiring: CV screening, technical interviewing, and final hiring recommendations.",
-            "Handling DBA responsibilities for core databases, including backups, restore procedures, and replication setup.",
-        ],
+    "action_points": [
+        "Architected and implemented the core backend platform (~20 microservices) from scratch, taking the system from prototype to stable production.",
+        "Launched the initial lending flow that processed approximately ₱1M in approved loans within the first two weeks after go-live.",
+        "Conducted ~50 technical interviews and helped build a core engineering team of 4 developers, including onboarding, mentoring, and setting engineering standards.",
+        "Introduced code review practices, automated testing, and static analysis, significantly reducing production incidents and increasing release confidence.",
+        "Designed and shipped an LLM-based customer support chatbot using a RAG pipeline (Qwen embeddings + FAISS), reducing first-line support load and improving response quality.",
+        "Implemented end-to-end observability (structured logging, metrics, alerting) with Prometheus, Grafana, Sentry, and ELK, shortening incident detection and resolution time (MTTR).",
+        "Built a fully automated CI/CD pipeline from the ground up, reducing release cycles from several days to a few hours and enabling frequent, low-risk deployments.",
+        "Prepared architecture diagrams, security documentation, and disaster-recovery materials for investor due diligence, increasing confidence in the platform’s scalability and robustness.",
+        "Planned and executed load tests, presented performance results to business stakeholders, and recommended scaling strategies and infrastructure cost optimizations.",
+    ],
+    "responsibilities": [
+        "Owning backend technical strategy and system architecture for the core BNPL aggregation platform.",
+        "Designing service boundaries, data flows, and integrations with external lending partners and internal services.",
+        "Delivering backend functionality end-to-end: requirements clarification, API design, implementation, testing, and production rollout.",
+        "Covering full-stack development for internal tools and admin panels when needed to unblock product delivery.",
+        "Leading DevOps initiatives: CI/CD setup, infrastructure-as-code, monitoring and alerting, reliability and failover mechanisms.",
+        "Providing technical leadership: breaking down work, prioritizing tasks, mentoring engineers, and enforcing engineering best practices.",
+        "Driving continuous improvements in development workflow, code quality, and release management processes.",
+        "Participating in hiring: screening candidates, running technical interviews, and contributing to final hiring decisions.",
+        "Handling DBA responsibilities for core databases, including backup and restore procedures, replication setup, and performance tuning.",
+    ],
         "skills": [
             {"name": "C4 model", "category": "Architecture & Methodologies"},
             {"name": "Microservices architecture", "category": "Architecture & Methodologies"},
@@ -149,19 +149,19 @@ UMI is a Philippines-based fintech startup and BNPL aggregation platform that co
         "work_end_date": "11-2023",
         "position_name": "Python / Backend / DevOps Instructor",
         "description": """
-Innopolis University’s Professional Development Center delivers corporate training programs for large enterprises and public-sector organizations, including Ak Bars Technology Center, Rostelecom, and federal initiatives. Programs focus on upskilling software engineers, QA specialists, and DevOps engineers to mid-level and above.
+Innopolis University’s Professional Development Center delivers corporate training programs for large enterprises and public-sector organizations, including Ak Bars Technology Center, Rostelecom, and federal initiatives. Programs focus on upskilling software engineers, QA specialists, and DevOps engineers to mid-level and senior levels.
 """,
-        "action_points": [
-            "Designed and delivered 7+ courses for 4 organizations on Python backend development, DevOps, QA, and data analysis / ML.",
-            "Trained 300+ professionals who went on to work as mid-level and senior engineers, QA leads, and DevOps specialists.",
-            "Ran 180+ live online sessions (lectures, labs, Q&A) and authored 3 complete course curricula with hands-on projects.",
-        ],
-        "responsibilities": [
-            "Designing course curricula and learning outcomes aligned with client needs and real-world engineering practices.",
-            "Delivering live webinars, practical labs, and Q&A sessions for mixed-experience cohorts.",
-            "Creating hands-on exercises, projects, and assessments that simulate real production scenarios.",
-            "Assessing student performance, grading assignments, and providing individualized feedback and recommendations.",
-        ],
+    "action_points": [
+        "Designed and delivered 7+ corporate courses for 4 organizations covering Python backend development, DevOps, QA, and data analysis / ML.",
+        "Trained 300+ professionals, many of whom progressed to mid-level and senior engineering, QA lead, and DevOps roles.",
+        "Ran 180+ live online sessions (lectures, labs, Q&A) and authored 3 complete curricula with project-based, production-like assignments.",
+    ],
+    "responsibilities": [
+        "Designing course curricula and learning outcomes aligned with client needs and real-world engineering practices.",
+        "Delivering live webinars, practical labs, and Q&A sessions for mixed-experience cohorts.",
+        "Creating hands-on exercises, projects, and assessments that simulate real production scenarios.",
+        "Assessing student performance, grading assignments, and providing individualized feedback and growth recommendations.",
+    ],
         "skills": [
             {"name": "Python", "category": "Programming Languages"},
             {"name": "Flask", "category": "Frameworks & Libraries"},
@@ -215,26 +215,26 @@ Innopolis University’s Professional Development Center delivers corporate trai
         "work_end_date": "08-2022",
         "position_name": "Python Developer",
         "description": """
-Instamart (Kuper / SberMarket) is part of the Sber ecosystem and one of the largest online grocery and quick-commerce platforms in Russia. The company operates at scale with high availability requirements, supporting millions of orders and thousands of pickers, couriers, and store employees.
+Instamart (Kuper / SberMarket) is part of the Sber ecosystem and one of the largest online grocery and quick-commerce platforms in Russia. The platform operates at scale with strict availability requirements, supporting millions of orders and thousands of pickers, couriers, and store employees.
 """,
-        "action_points": [
-            "Developed 5 internal backend services and web tools that streamlined workflows for internal operations and support teams.",
-            "Led all core Scrum ceremonies (planning, refinement, reviews, retrospectives), improving delivery predictability and team alignment.",
-            "Decomposed and distributed work across backend engineers, balancing workload and accelerating feature delivery.",
-            "Performed code reviews for in-house and vendor teams, enforcing coding standards and architectural guidelines.",
-            "Mentored junior and mid-level developers, helping them ramp up on the stack and internal processes.",
-            "Coordinated with adjacent teams to define and document service-to-service integration contracts and APIs.",
-            "Monitored production services, participated in incident investigations, and contributed to stability improvements.",
-        ],
-        "responsibilities": [
-            "Backend development of internal services and APIs supporting the e-commerce and fulfillment platform.",
-            "Service and data model design, including integrations with existing microservice ecosystems.",
-            "Planning sprints, breaking down epics into deliverable tasks, and distributing workload within the team.",
-            "Facilitating Scrum events and maintaining transparency on progress and risks.",
-            "Conducting code reviews and upholding engineering quality standards.",
-            "Cross-team collaboration on technical integrations and troubleshooting.",
-            "Operational ownership of services in production, including basic on-call responsibilities.",
-        ],
+    "action_points": [
+        "Developed 5 internal backend services and web tools that streamlined workflows for operations and support teams.",
+        "Led all core Scrum ceremonies (planning, refinement, reviews, retrospectives), improving delivery predictability and team alignment.",
+        "Decomposed and distributed work across backend engineers, balancing workload and accelerating feature delivery.",
+        "Performed code reviews for in-house and vendor teams, enforcing coding standards and architectural guidelines.",
+        "Mentored junior and mid-level developers, helping them ramp up on the stack and internal processes.",
+        "Coordinated with adjacent teams to define and document integration contracts and service-to-service APIs.",
+        "Monitored production services, participated in incident investigations, and contributed to stability and reliability improvements.",
+    ],
+    "responsibilities": [
+        "Backend development of internal services and APIs supporting the e-commerce and fulfillment platform.",
+        "Designing service and data models, including integrations with the existing microservice ecosystem.",
+        "Planning sprints, breaking down epics into deliverable tasks, and distributing workload within the team.",
+        "Facilitating Scrum events and maintaining transparency on progress, risks, and dependencies.",
+        "Conducting code reviews and upholding engineering quality standards.",
+        "Collaborating with other teams on technical integrations and troubleshooting cross-service issues.",
+        "Taking operational ownership of services in production, including basic on-call responsibilities.",
+    ],
         "skills": [
             {"name": "Python", "category": "Programming Languages"},
             {"name": "Django", "category": "Frameworks & Libraries"},
@@ -282,15 +282,15 @@ The GIS Centre at Innopolis University focuses on research and development of ge
 """,
         "action_points": [
             "Implemented the backend for KSDM, a government-facing GIS used to monitor remote-sensing data across the Volga Federal District.",
-            "Developed the backend of Teleagronom, a system predicting pest outbreaks and recommending field work schedules for the Ministry of Agriculture of Mordovia and local agribusinesses.",
+            "Developed the backend of Teleagronom, a system that predicts pest outbreaks and recommends field work schedules for the Ministry of Agriculture of Mordovia and local agribusinesses.",
             "Led technical discussions and API design for integrations with third-party systems, then implemented and maintained those integrations.",
-            "Mentored junior developers and performed regular code reviews to maintain code quality.",
+            "Mentored junior developers and performed regular code reviews to maintain code quality and consistency.",
         ],
         "responsibilities": [
             "Backend development for GIS products, including data APIs and processing services.",
             "Authoring and maintaining automated tests and CI/CD pipelines for project components.",
-            "Deploying services to on-prem and cloud environments, troubleshooting issues in production.",
-            "Coordinating integrations and technical details with external vendor teams.",
+            "Deploying services to on-prem and cloud environments and troubleshooting issues in production.",
+            "Coordinating integration details and technical requirements with external vendor teams.",
             "Supporting junior engineers and contributing to team-level best practices.",
         ],
         "skills": [
@@ -332,7 +332,7 @@ The GIS Centre at Innopolis University focuses on research and development of ge
         "work_end_date": "10-2021",
         "position_name": "Senior Python Developer (Contractor)",
         "description": """
-Akvelon is a consulting and outsourcing company serving major technology clients. As a backend contractor for Reddit’s Growth team, I contributed to infrastructure that improved how Reddit content was indexed and surfaced in external search engines.
+Akvelon is a consulting and outsourcing company serving major technology clients. As a backend contractor for Reddit’s Growth team, contributed to infrastructure that improved how Reddit content is indexed and surfaced in external search engines.
 """,
         "action_points": [
             "Developed a centralized page indexing service for Reddit, enforcing prioritization and rate limits to optimize how pages are crawled for Google search.",
@@ -372,7 +372,7 @@ X5 Retail Group is the largest grocery retailer in Russia, operating ~16,000 sto
 """,
         "action_points": [
             "Built 10+ asynchronous microservices for the omnichannel platform supporting customer journeys across online and offline channels.",
-            "Delivered a centralized consent management service that now stores legal grounds and opt-ins for over 11 million loyalty cards.",
+            "Delivered a centralized consent management service that stores legal grounds and opt-ins for over 11 million loyalty cards.",
             "Contributed to high-load services used by 5,000+ retail locations, including QR-based fast payment integrations and real-time stock tracking.",
         ],
         "responsibilities": [
@@ -432,7 +432,7 @@ InnoCamp is a technology-focused summer camp in Innopolis for teenagers interest
         "action_points": [
             "Designed and delivered an intensive web development course in Python for teenagers.",
             "Helped students build their first end-to-end web projects and understand core CS concepts.",
-            "Several students later enrolled in university-level computer science programs.",
+            "Several students subsequently enrolled in university-level computer science programs.",
         ],
         "responsibilities": [
             "Preparing teaching materials, including examples, slides, and homework assignments.",
@@ -495,14 +495,14 @@ Innopolis University is a specialized computer science university with English-t
         "work_end_date": "01-2020",
         "position_name": "Python Software Engineer",
         "description": """
-The Cloud Technologies Lab at Innopolis University builds cloud-based remote sensing platforms and ML-powered services for government and enterprise. AIForest is a forest change detection system built for the Ministry of Forestry of the Republic of Tatarstan, using satellite imagery and geospatial analytics.
+The Cloud Technologies Lab at Innopolis University builds cloud-based remote sensing platforms and ML-powered services for government and enterprise. AIForest is a forest change detection system for the Ministry of Forestry of the Republic of Tatarstan, built on satellite imagery and geospatial analytics.
 """,
         "action_points": [
             "Implemented backend services processing 15+ GB of geospatial data per day for forest change detection.",
             "Contributed to a solution that generated over 6M RUB in revenue for the university in its first year.",
-            "Integrated the AIForest service into the broader cloud remote sensing platform.",
+            "Integrated the AIForest service into the broader cloud remote sensing platform used by external clients.",
             "Facilitated Scrum ceremonies and supported process organization within the team.",
-            "Mentored a junior developer and helped define a clear growth path.",
+            "Mentored a junior developer and helped define a clear technical growth path.",
         ],
         "responsibilities": [
             "Backend development for geospatial analytics services and APIs.",
@@ -564,7 +564,7 @@ The Cloud Technologies Lab at Innopolis University builds cloud-based remote sen
 Tinkoff (T-Bank) is one of the largest digital banks in Russia. The Technology Centre builds internal tools and customer-facing products that support a fully online banking model.
 """,
         "action_points": [
-            "Developed the backend for a browser-extension-like web tool used by help desk specialists to correct customer-input errors using NLU.",
+            "Developed the backend for a web tool used by help desk specialists to correct customer-input errors using NLU.",
             "Collected and prepared training datasets for several NLP models used in the prototype.",
             "Trained and compared multiple models (including CBOW-based approaches) and selected the best-performing one.",
         ],
@@ -603,8 +603,8 @@ Tinkoff (T-Bank) is one of the largest digital banks in Russia. The Technology C
 Avaks GeoService specializes in civilian UAVs and software for processing drone-collected data. The company builds solutions for surveying, mapping, and aerial monitoring.
 """,
         "action_points": [
-            "Implemented a plugin for the existing UAV control software to analyze telemetry and render 3D flight paths.",
-            "Tested the plugin using real UAV flight data and refined algorithms based on results.",
+            "Implemented a plugin for an existing UAV control application to analyze telemetry and render 3D flight paths.",
+            "Tested the plugin using real UAV flight data and refined algorithms based on test results.",
         ],
         "responsibilities": [
             "Extending the existing C++/Qt-based application with new functionality.",
@@ -631,7 +631,7 @@ Avaks GeoService specializes in civilian UAVs and software for processing drone-
         "work_end_date": "03-2017",
         "position_name": "Junior Python Developer",
         "description": """
-ChatBotShop was a small web studio focused on building websites and chatbots for SMEs. Projects included early chatbot solutions for restaurants and local businesses.
+ChatBotShop was a small web studio focused on building websites and chatbots for small and medium-sized businesses. Projects included early chatbot solutions for restaurants and local services.
 """,
         "action_points": [
             "Built features for a Telegram-based ordering bot and admin panel for a restaurant client in Israel.",
@@ -665,7 +665,7 @@ ChatBotShop was a small web studio focused on building websites and chatbots for
         "work_end_date": "02-2017",
         "position_name": "Python Course Instructor",
         "description": """
-Novosibirsk Academy of Programming and Design is an after-school program for teenagers interested in programming and digital skills. Courses are focused on practical, project-based learning.
+Novosibirsk Academy of Programming and Design is an after-school program for teenagers interested in programming and digital skills. Courses focus on practical, project-based learning.
 """,
         "action_points": [
             "Designed and launched a new course on 2D game development in Python for a group of ~12 students.",
@@ -695,11 +695,11 @@ Novosibirsk Academy of Programming and Design is an after-school program for tee
         "work_end_date": "08-2016",
         "position_name": "Java Android Intern",
         "description": """
-Beward is a manufacturer of video surveillance hardware and software for home and enterprise security. The Android app I worked on was used to configure and manage CCTV systems.
+Beward is a manufacturer of video surveillance hardware and software for home and enterprise security. The Android app was used to configure and manage CCTV systems in the field.
 """,
         "action_points": [
             "Implemented three new screens in an existing Android application for configuring CCTV systems.",
-            "Got hands-on experience with Android component lifecycles, contexts, and UI design principles.",
+            "Gained hands-on experience with Android component lifecycles, contexts, and UI design principles.",
             "Integrated third-party libraries to support additional use cases in the app.",
         ],
         "responsibilities": [

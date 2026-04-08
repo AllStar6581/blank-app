@@ -28,10 +28,13 @@ msgid "Experience"
 msgstr "Опыт работы"
 
 msgid "#### Responsibilities"
-msgstr "#### За что отвечал"
+msgstr "#### Зоны ответственности"
 
 msgid "#### Education"
 msgstr "#### Образование"
+
+msgid "#### Results"
+msgstr "#### Результаты"
 
 msgid "Skills"
 msgstr "Навыки"
