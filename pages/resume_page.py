@@ -753,11 +753,8 @@ def _render_page():
             col_logo, col_text, _, _ = st.columns(4, gap="small")
             with col_logo:
                 if edu.icon:
-                    img_bytes = get_image_from_cache(edu.icon)
-                    if img_bytes:
-                        st.image(img_bytes, width=150, clamp=True, caption=f"{edu.website}")
-                    else:
-                        _ensure_image_downloaded(edu.icon)
+                    img_bytes = Image.open(edu.icon)
+                    st.image(img_bytes, width=150, clamp=True, caption=f"{edu.website}")
             with col_text:
                 st.write(edu.degree)
                 st.write(f"{edu.year_start} - {edu.year_end}")

@@ -773,7 +773,7 @@ Beward — производитель оборудования и ПО для с
             "year_start": "2017",
             "year_end": "2018",
             "website": "https://innopolis.university",
-            "icon": "https://embit.ru/wp-content/uploads/2023/06/873593.png",
+            "icon": "static/inno_logo.png",
         },
         {
             "degree": "Бакалавриат - Программная инженерия",
@@ -782,7 +782,7 @@ Beward — производитель оборудования и ПО для с
             "year_start": "2013",
             "year_end": "2017",
             "website": "https://www.sfu-kras.ru/en",
-            "icon": "https://ctftime.org/media/team/1643606799_5-papik-pro-p-sfu-logotip-5_1.png",
+            "icon": "static/sfu_logo.png",
         },
     ],
     "spoken_languages": [
