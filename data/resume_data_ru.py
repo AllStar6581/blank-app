@@ -7,7 +7,7 @@ resume_dict = {
     "website": "https://kriminetskii.streamlit.app",
     "photo": "static/me.jpg",
     "about" : """
-Backend-разработчик с 9+ лет опыта в проектировании, разработке и масштабировании надёжных распределённых систем в FinTech, Retail и Geospatial. Обладаю сильным бэкграундом в Python и смежном DevOps-стеке, использую C4 model и практики микросервисного дизайна для системного подхода к архитектуре.
+Backend-разработчик с 10 годами опыта в проектировании, разработке и масштабировании надёжных распределённых систем в FinTech, Retail и Geospatial. Обладаю сильным бэкграундом в Python и смежном DevOps-стеке, использую C4 model и практики микросервисного дизайна для системного подхода к архитектуре.
 
 Технологически агностичен: предпочитаю стек Python/PostgreSQL/React, но осознанно подбираю инструменты под задачу и комфортно работаю с Go, Kotlin, Flutter и другими технологиями.
 Основной опыт — построение высоконагруженных, отказоустойчивых и безопасных систем с жёсткими требованиями к доступности и надёжности.
@@ -45,6 +45,107 @@ Backend-разработчик с 9+ лет опыта в проектирова
         },
     ],
     "exp": [
+    {
+        "company_name": "Фриланс / Контрактный проект (Flutter + Django + LLM)",
+        "company_contacts": "[приватный проект]",
+        "company_contacts_link": None,
+        "work_start_date": "03-2026",
+        "work_end_date": None,
+        "position_name": "Full-Stack Mobile & Backend разработчик / Tech Lead",
+        "description": """
+Мобильное приложение для здоровья и фитнеса с интеграцией Google Fit для сбора и синхронизации метрик активности пользователя. Продукт включает Flutter-клиент, Django-backend и ИИ-ассистента на базе LLM с поддержкой function calling и анализом видео.
+""",
+        "action_points": [
+            "Единственный разработчик приложения: реализовал Flutter-клиент, Django-backend и интеграцию с Google Fit для сбора и синхронизации пользовательских данных об активности.",
+            "Спроектировал архитектуру приложения, API-контракты и модели данных с нуля; отвечаю за деплой и поддержку продакшена.",
+            "Разработал ИИ-ассистента на базе LLM с function calling и анализом видео: ассистент получает доступ к пользовательскому контенту из приложения, интерпретирует данные, вызывает функции backend'а и использует видеозаписи как часть контекста.",
+            "Фактически исполняю роль техлида: формулирую требования, регулярно вовлекаю заказчика и дизайнера в уточнение сценариев, UX и приоритизации, чтобы продукт действительно решал задачи пользователей.",
+        ],
+        "responsibilities": [
+            "Полный цикл разработки мобильного приложения: Flutter-клиент, Django REST backend и синхронизация данных с Google Fit.",
+            "Проектирование архитектуры, определение API-контрактов и владение моделями данных.",
+            "Разработка ИИ-ассистента с поддержкой function calling и видеоконтекста.",
+            "Деплой в продакшен, мониторинг и поддержка.",
+            "Роль техлида: формулирование требований, вовлечение заказчика и дизайнера, UX-выравнивание и приоритизация фич.",
+        ],
+        "skills": [
+            {"name": "Flutter", "category": "Frameworks & Libraries"},
+            {"name": "Системная архитектура", "category": "Architecture & Methodologies"},
+            {"name": "Dart", "category": "Programming Languages"},
+            {"name": "Django", "category": "Frameworks & Libraries"},
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "PostgreSQL", "category": "Cloud & Databases"},
+            {"name": "Google Fit API", "category": "Tools & Platforms"},
+            {"name": "REST API", "category": "Messaging & Streaming"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "CI/CD", "category": "DevOps & Infrastructure"},
+            {"name": "LLM (function calling)", "category": "AI & ML"},
+            {"name": "Анализ видео", "category": "AI & ML"},
+            {"name": "Техническое лидерство", "category": "Leadership & soft skills"},
+            {"name": "Коммуникация с заказчиком", "category": "Leadership & soft skills"},
+            {"name": "Формирование требований", "category": "Leadership & soft skills"},
+            {"name": "Linux", "category": "DevOps & Infrastructure"},
+            {"name": "Bash", "category": "DevOps & Infrastructure"},
+            {"name": "nginx", "category": "DevOps & Infrastructure"},
+        ],
+    },
+    {
+        "company_name": "Neunet.Work",
+        "company_contacts": "neunet.work",
+        "company_contacts_link": "https://neunet.work",
+        "work_start_date": "03-2026",
+        "work_end_date": "07-2026",
+        "position_name": "CTO & Ведущий разработчик",
+        "description": """
+Neunet.Work — AI-платформа для подбора персонала с семантическим поиском и RAG-ассистентом. Платформа сопоставляет кандидатов и вакансии с помощью векторного поиска и LLM, фокусируясь на качестве соответствия, а не на ключевых словах.
+""",
+        "action_points": [
+            "Спроектировал архитектуру системы поиска и RAG-ассистента с использованием нотаций C4 и Archimate для коммуникации с командой и стейкхолдерами.",
+            "Разработал RAG-систему с ИИ-ассистентом и поисковым движком на базе LangChain, Qdrant и OpenSearch.",
+            "Выстроил технические процессы: стандарты code review, стратегию ветвления и процессы управления релизами.",
+            "Настроил CI/CD-пайплайны и сформировал требования к окружениям и инфраструктуре, обеспечив предсказуемую и воспроизводимую поставку изменений.",
+            "Принимал ключевые решения по технологическому стеку и инфраструктуре продукта.",
+        ],
+        "responsibilities": [
+            "Ответственность за техническую сторону продукта: системная архитектура, выбор стека и инфраструктурные решения.",
+            "Проектирование и разработка RAG-системы с ИИ-ассистентом и семантическим поиском.",
+            "Документирование архитектуры с помощью Archimate и C4 для выравнивания команды и коммуникации со стейкхолдерами.",
+            "Настройка и поддержка CI/CD-пайплайнов и инфраструктуры поставки.",
+            "Определение инженерных процессов, стратегии ветвления и управления релизами.",
+        ],
+        "skills": [
+            {"name": "Python", "category": "Programming Languages"},
+            {"name": "LangChain", "category": "Frameworks & Libraries"},
+            {"name": "Qdrant", "category": "Cloud & Databases"},
+            {"name": "OpenSearch", "category": "Cloud & Databases"},
+            {"name": "RAG", "category": "AI & ML"},
+            {"name": "OpenCLIP", "category": "AI & ML"},
+            {"name": "C4 model", "category": "Architecture & Methodologies"},
+            {"name": "Archimate", "category": "Architecture & Methodologies"},
+            {"name": "Системная архитектура", "category": "Architecture & Methodologies"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "CI/CD", "category": "DevOps & Infrastructure"},
+            {"name": "Git", "category": "DevOps & Infrastructure"},
+            {"name": "Техническое лидерство", "category": "Leadership & soft skills"},
+            {"name": "Коммуникация со стейкхолдерами", "category": "Leadership & soft skills"},
+            {"name": "Linux", "category": "DevOps & Infrastructure"},
+            {"name": "Bash", "category": "DevOps & Infrastructure"},
+            {"name": "nginx", "category": "DevOps & Infrastructure"},
+            {"name": "OpenSearch", "category": "Cloud & Databases"},
+            {"name": "LangChain", "category": "Frameworks & Libraries"},
+            {"name": "CI/CD", "category": "DevOps & Infrastructure"},
+            {"name": "OpenSearch", "category": "Cloud & Databases"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "OpenCLIP", "category": "AI & ML"},
+            {"name": "Synapse", "category": "DevOps & Infrastructure"},
+            {"name": "AWS S3", "category": "Cloud & Databases"},
+            {"name": "Ansible", "category": "DevOps & Infrastructure"},
+            {"name": "HuggingFace", "category": "AI & ML"},
+            {"name": "Go", "category": "Programming Languages"},
+
+
+        ],
+    },
     {
         "company_name": "UMI Technologies Corp. (Филиппины)",
         "company_contacts": "umi.ph",
