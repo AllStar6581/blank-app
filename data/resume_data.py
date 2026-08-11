@@ -1,17 +1,19 @@
 resume_dict = {
     "first_name": "Alexandr",
     "last_name": "Kriminétskii",
-    "expected_position": "Lead / Senior Backend Engineer",
+    "expected_position": "Lead / Senior Backend Engineer (Python / AI/LLM)",
     "email": "Kriminetz0810@gmail.com",
     "tel": "+77470305448",
     "website": "https://kriminetskii.streamlit.app",
     "photo": "static/me.jpg",
     "about": """
-Senior Backend Engineer with 9+ years of experience designing, building, and scaling backend systems, primarily in fintech, retail, and geospatial domains. Strong track record of taking platforms from zero to production and supporting them under real-world load.
+Senior / Lead Backend Engineer with 10+ years designing, building, and scaling high-load distributed systems across fintech, retail, and geospatial domains.
 
-Deep expertise in Python, distributed systems, and microservices (C4 model), combined with hands-on DevOps experience across CI/CD, observability, and infrastructure automation. Technologically agnostic: comfortable working with Go, Kotlin, React, Flutter, PostgreSQL, RabbitMQ, and modern cloud-native tooling when it best serves the product.
+Launched a credit lending flow that approved ₱1M in loans within the first two weeks after go-live. Delivered a centralized consent service serving 11M+ loyalty cards. Architected and shipped 20+ microservices from prototype to stable production. Led engineering as CTO and Tech Lead at three companies, conducted 50+ technical interviews, reduced release cycles from days to hours through CI/CD automation.
 
-Experienced in leading engineering initiatives, shaping technical direction, and raising the bar for code quality through testing, static analysis, and code review. Business-minded and impact-driven: focus on shipping reliable features frequently, improving core metrics, and enabling teams to move fast without sacrificing long-term maintainability.
+Deep hands-on AI/LLM experience: production RAG pipelines, LangChain, Qdrant, OpenSearch, LLM function calling, vector search. AI-native workflow: Claude Code, Cursor, ChatGPT.
+
+Core stack: Python, Go, PostgreSQL, Docker, Kubernetes. Fully remote — UTC+3 (EU morning overlap 8:00–14:00 CET).
 """,
     "contacts": [
         {
@@ -112,28 +114,23 @@ Neunet.Work is an AI-powered recruitment platform built around a semantic search
             {"name": "Python", "category": "Programming Languages"},
             {"name": "Go", "category": "Programming Languages"},
             {"name": "Technical leadership", "category": "Leadership & soft skills"},
+            {"name": "Key technical decisions", "category": "Leadership & soft skills"},
+            {"name": "Code review", "category": "Quality & Testing"},
+            {"name": "Stakeholder communication", "category": "Leadership & soft skills"},
+            {"name": "Ownership & accountability", "category": "Leadership & soft skills"},
             {"name": "OpenSearch", "category": "Cloud & Databases"},
             {"name": "LangChain", "category": "Frameworks & Libraries"},
-            {"name": "CI/CD", "category": "DevOps & Infrastructure"},
-            {"name": "OpenSearch", "category": "Cloud & Databases"},
-            {"name": "Docker", "category": "DevOps & Infrastructure"},
-            {"name": "OpenCLIP", "category": "AI & ML"},
-            {"name": "Synapse", "category": "DevOps & Infrastructure"},
-            {"name": "AWS S3", "category": "Cloud & Databases"},
-            {"name": "Ansible", "category": "DevOps & Infrastructure"},
-            {"name": "HuggingFace", "category": "AI & ML"},
-            {"name": "Ownership & accountability", "category": "Leadership & soft skills"},
-            {"name": "Linux", "category": "DevOps & Infrastructure"},
-            {"name": "Bash", "category": "DevOps & Infrastructure"},
-            {"name": "nginx", "category": "DevOps & Infrastructure"},
-
-
-
-            
             {"name": "RAG", "category": "AI & ML"},
             {"name": "Qdrant", "category": "Cloud & Databases"},
+            {"name": "CI/CD", "category": "DevOps & Infrastructure"},
+            {"name": "Docker", "category": "DevOps & Infrastructure"},
+            {"name": "OpenCLIP", "category": "AI & ML"},
+            {"name": "HuggingFace", "category": "AI & ML"},
+            {"name": "AWS S3", "category": "Cloud & Databases"},
+            {"name": "Ansible", "category": "DevOps & Infrastructure"},
             {"name": "Git", "category": "DevOps & Infrastructure"},
-            {"name": "Stakeholder communication", "category": "Leadership & soft skills"},
+            {"name": "Linux", "category": "DevOps & Infrastructure"},
+            {"name": "Bash", "category": "DevOps & Infrastructure"},
         ],
     },
     {
@@ -238,6 +235,13 @@ UMI is a Philippines-based fintech startup and BNPL aggregation platform that co
             {"name": "Stakeholder communication", "category": "Leadership & soft skills"},
             {"name": "Ownership & accountability", "category": "Leadership & soft skills"},
             {"name": "Working in ambiguity", "category": "Leadership & soft skills"},
+            {"name": "Key technical decisions", "category": "Leadership & soft skills"},
+            {"name": "Task decomposition & delegation", "category": "Leadership & soft skills"},
+            {"name": "Investor due diligence", "category": "Leadership & soft skills"},
+            {"name": "Code review", "category": "Quality & Testing"},
+            {"name": "High-load systems", "category": "Architecture & Methodologies"},
+            {"name": "Systems analysis", "category": "Architecture & Methodologies"},
+            {"name": "System Architecture", "category": "Architecture & Methodologies"},
         ],
     },
     {
@@ -840,7 +844,6 @@ Beward is a manufacturer of video surveillance hardware and software for home an
     ],
     "spoken_languages": [
         {"name": "English", "level": "C1"},
-        {"name": "Polish", "level": "A2"},
         {"name": "Russian", "level": "Native"},
     ],
     "projects": [

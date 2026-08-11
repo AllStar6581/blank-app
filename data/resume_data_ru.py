@@ -1,25 +1,21 @@
 resume_dict = {
     "first_name": "Александр",
     "last_name": "Криминецкий",
-    "expected_position": "Lead / Senior Backend Engineer",
+    "expected_position": "Lead / Senior Backend Engineer · LLM / AI / Python",
     "email": "Kriminetz0810@gmail.com",
     "tel": "+79082052839",
     "website": "https://kriminetskii.streamlit.app",
     "photo": "static/me.jpg",
     "about" : """
-Backend-разработчик с 10 годами опыта в проектировании, разработке и масштабировании надёжных распределённых систем в FinTech, Retail и Geospatial. Обладаю сильным бэкграундом в Python и смежном DevOps-стеке, использую C4 model и практики микросервисного дизайна для системного подхода к архитектуре.
+Backend-инженер с 10+ годами опыта проектирования и запуска высоконагруженных распределённых систем в FinTech, Retail и Geospatial.
 
-Технологически агностичен: предпочитаю стек Python/PostgreSQL/React, но осознанно подбираю инструменты под задачу и комфортно работаю с Go, Kotlin, Flutter и другими технологиями.
-Основной опыт — построение высоконагруженных, отказоустойчивых и безопасных систем с жёсткими требованиями к доступности и надёжности.
+Запустил кредитный поток, одобривший ₱1 млн кредитов за первые 2 недели. Реализовал централизованный сервис согласий для 11+ млн карт лояльности X5 Group. Построил 20+ микросервисов от прототипа до стабильного продакшена; в одиночку — full-stack мобильное приложение с LLM-ассистентом, function calling и видеоконтекстом.
 
-Многократно проводил продукты от идеи и прототипа до продакшена с реальной выручкой: проектировал архитектуру, выстраивал мониторинг и алертинг, настраивал CI/CD и процессы контроля качества, участвовал в сопровождении в бою.
-Регулярно выступал в роли технического лидера: задавал технический вектор, участвовал в найме, выстраивал процессы разработки, проводил code review и менторил инженеров.
+Исполнял роль CTO и Tech Lead в трёх компаниях: выстраивал команды, проводил 50+ технических интервью, внедрял CI/CD (цикл релизов сократился с дней до часов), строил мониторинг Prometheus/Grafana/ELK с нуля.
 
-Смотрю на разработку через призму бизнес-ценности: код — инструмент для решения задач бизнеса и заработка денег, а не цель сам по себе. Предпочитаю «достаточно хорошее» решение и быстрый релиз с последующей итерацией и сбором обратной связи вместо бесконечного полирования, тормозящего time-to-market и частоту релизов.
-При этом держу высокую планку качества: использую автотесты, статический анализ и единые стандарты кода, чтобы поддерживать устойчивую скорость разработки в долгую.
+Основной стек: Go, Python, PostgreSQL, Kubernetes, Docker. Глубокий опыт AI/LLM: LangChain, RAG, Qdrant, OpenSearch, LLM function calling, векторный поиск. Рабочий workflow с Claude Code, Cursor и ChatGPT.
 
-Ориентируюсь на метрики и измеримые критерии успеха: перед изменением процессов или архитектуры фиксирую состояние «как есть», после изменений оцениваю эффект по данным.
-Готов брать ответственность за технические решения, объяснять риски и trade-off’ы бизнесу понятным языком и вести команду к измеримому результату.
+Доступен удалённо из Иннополиса (UTC+3).
 """,
     "contacts": [
         {
@@ -127,7 +123,9 @@ Neunet.Work — AI-платформа для подбора персонала �
             {"name": "CI/CD", "category": "DevOps & Infrastructure"},
             {"name": "Git", "category": "DevOps & Infrastructure"},
             {"name": "Техническое лидерство", "category": "Leadership & soft skills"},
+            {"name": "Принятие ключевых технических решений", "category": "Leadership & soft skills"},
             {"name": "Коммуникация со стейкхолдерами", "category": "Leadership & soft skills"},
+            {"name": "Code review", "category": "Quality & Testing"},
             {"name": "Linux", "category": "DevOps & Infrastructure"},
             {"name": "Bash", "category": "DevOps & Infrastructure"},
             {"name": "nginx", "category": "DevOps & Infrastructure"},
@@ -248,10 +246,17 @@ UMI — финтех‑стартап и мобильный онлайн‑се�
             {"name": "Техническое лидерство", "category": "Leadership & soft skills"},
             {"name": "Управление командой", "category": "Leadership & soft skills"},
             {"name": "Постановка задач и приоритизация", "category": "Leadership & soft skills"},
+            {"name": "Декомпозиция задач", "category": "Leadership & soft skills"},
             {"name": "Коммуникация с бизнес-стейкхолдерами", "category": "Leadership & soft skills"},
             {"name": "Ответственность за результат", "category": "Leadership & soft skills"},
             {"name": "Адаптивность", "category": "Leadership & soft skills"},
             {"name": "Работа в условиях неопределённости", "category": "Leadership & soft skills"},
+            {"name": "Принятие ключевых технических решений", "category": "Leadership & soft skills"},
+            {"name": "Отчётность для инвесторов / Due Diligence", "category": "Leadership & soft skills"},
+            {"name": "Highload", "category": "Architecture & Methodologies"},
+            {"name": "Системный анализ", "category": "Architecture & Methodologies"},
+            {"name": "Системная архитектура", "category": "Architecture & Methodologies"},
+            {"name": "Code review", "category": "Quality & Testing"},
         ],
     },
     {
@@ -888,7 +893,6 @@ Beward — производитель оборудования и ПО для с
     ],
     "spoken_languages": [
         {"name": "Английский", "level": "C1"},
-        {"name": "Польский", "level": "A2"},
         {"name": "Русский", "level": "Родной"},
     ],
     "projects": [
