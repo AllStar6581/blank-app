@@ -28,7 +28,7 @@ class InternationalDocxGenerator:
     """
 
     # -- Compact-mode knobs --------------------------------------------------
-    DETAILED_EXPERIENCE_COUNT = 3   # full bullets in compact mode
+    DETAILED_EXPERIENCE_COUNT = 4   # full bullets in compact mode
     COMPACT_MAX_BULLETS = 3         # per detailed entry
     COMPACT_MAX_SKILLS = 8          # per detailed entry
     SKILLS_PER_CATEGORY = 8         # global skills section

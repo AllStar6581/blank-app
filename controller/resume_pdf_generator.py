@@ -34,7 +34,7 @@ class HHRuPDFGenerator:
     """
 
     # -- Compact-mode knobs --------------------------------------------------
-    DETAILED_EXPERIENCE_COUNT = 3
+    DETAILED_EXPERIENCE_COUNT = 4
     COMPACT_MAX_BULLETS = 3
     COMPACT_MAX_SKILLS = 8
 
