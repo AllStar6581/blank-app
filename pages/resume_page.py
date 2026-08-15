@@ -31,7 +31,7 @@ from controller.resume_controller import (
     _extract_skill_name,
 )
 from controller.resume_docx_generator import InternationalDocxGenerator
-from controller.resume_pdf_generator import HHRuPDFGenerator
+from controller.resume_pdf_generator import HHRuPDFGenerator, InternationalPDFGenerator
 from data.resume_data import resume_dict
 from data.resume_data_ru import resume_dict as resume_dict_ru
 from locales.localization import get_text
@@ -397,6 +397,13 @@ _pending_downloads: set[str] = set()
 _prewarm_pending: set[str] = set()
 
 
+def _get_generator_cls(language: str, fmt: str):
+    """Return the correct generator class for the given language+format combo."""
+    if fmt == "pdf":
+        return HHRuPDFGenerator if language == "RUSSIAN" else InternationalPDFGenerator
+    return InternationalDocxGenerator
+
+
 def _download_cache_key(language: str, compact: bool, fmt: str) -> str:
     """Build the L2 cache key for a download variant."""
     data = resume_dict_ru if language == "RUSSIAN" else resume_dict
@@ -420,7 +427,7 @@ def _prewarm_download(language: str, compact: bool, fmt: str = "docx") -> None:
         try:
             data = resume_dict_ru if language == "RUSSIAN" else resume_dict
             resume = Resume.from_json(data)
-            gen_cls = HHRuPDFGenerator if fmt == "pdf" else InternationalDocxGenerator
+            gen_cls = _get_generator_cls(language, fmt)
             buf = io.BytesIO()
             gen_cls(resume, compact=compact).generate(buf)
             buf.seek(0)
@@ -460,7 +467,7 @@ def _generate_download_bytes(language: str, compact: bool = True, fmt: str = "do
         return cached
 
     resume = _load_resume(language)
-    generator_cls = HHRuPDFGenerator if fmt == "pdf" else InternationalDocxGenerator
+    generator_cls = _get_generator_cls(language, fmt)
     buf = io.BytesIO()
     generator_cls(resume, compact=compact).generate(buf)
     buf.seek(0)
@@ -674,8 +681,7 @@ def _render_experience(resume_page, language, L_):
 @st.fragment
 def _render_download(language, L_):
     """Fragment for compact toggle + format selector + download."""
-    st.toggle(L_("Compact CV (1-2 pages)"), value=True, key="compact_cv")
-    compact = st.session_state.get("compact_cv", True)
+    compact = st.toggle(L_("Compact CV (1-2 pages)"), value=True, key="compact_cv")
 
     fmt = st.radio(
         "Format",

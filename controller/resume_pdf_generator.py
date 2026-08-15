@@ -550,3 +550,20 @@ class HHRuPDFGenerator:
             duration_parts.append(f"{remaining} {self.TXT_MONTHS}")
 
         return f"{start_text} - {end_text} ({' '.join(duration_parts)})"
+
+
+class InternationalPDFGenerator(HHRuPDFGenerator):
+    """English-language PDF variant — same layout, English section labels."""
+
+    TXT_TECH_STACK = "Stack:"
+    TXT_WORK_EXPERIENCE = "WORK EXPERIENCE"
+    TXT_EARLIER_CAREER = "EARLIER CAREER"
+    TXT_EDUCATION = "EDUCATION"
+    TXT_SKILLS = "KEY SKILLS"
+    TXT_LANGUAGES = "LANGUAGES"
+    TXT_ABOUT = "ABOUT"
+    TXT_YEARS_OF_EXPERIENCE = "years exp."
+    TXT_PRESENT_TIME = "Present"
+    TXT_YEARS = "yr"
+    TXT_MONTHS = "mo"
+    TXT_SEE_DETAILED_CV = "See full CV online"
