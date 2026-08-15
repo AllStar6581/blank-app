@@ -692,14 +692,15 @@ def _render_download(language, L_):
         label_visibility="collapsed",
     )
 
+    is_ru = language == "RUSSIAN"
     if fmt == "pdf":
-        file_name = L_("Kriminetskii_Lead_Backend_2026_CV.pdf")
+        file_name = "Криминецкий_Lead_Backend_2026_CV.pdf" if is_ru else "Kriminetskii_Lead_Backend_2026_CV.pdf"
         mime = "application/pdf"
-        label = L_("📄 Download CV as .pdf file")
+        label = "📄 Скачать резюме (.pdf)" if is_ru else "📄 Download CV as .pdf file"
     else:
-        file_name = L_("Kriminetskii_Lead_Backend_2026_CV.docx")
+        file_name = "Криминецкий_Lead_Backend_2026_CV.docx" if is_ru else "Kriminetskii_Lead_Backend_2026_CV.docx"
         mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-        label = L_("📄 Download CV as .docx file (word)")
+        label = "📄 Скачать резюме (.docx)" if is_ru else "📄 Download CV as .docx file (word)"
 
     download_bytes = _generate_download_bytes(language, compact, fmt)
     st.download_button(

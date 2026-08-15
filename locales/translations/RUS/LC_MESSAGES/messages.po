@@ -4,9 +4,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "📄 Download CV as .docx file (word)"
-msgstr "📄 Скачать одним файлом (pdf)"
+msgstr "📄 Скачать резюме (.docx)"
+
+msgid "📄 Download CV as .pdf file"
+msgstr "📄 Скачать резюме (.pdf)"
 
 msgid "Kriminetskii_Lead_Backend_2026_CV.docx"
+msgstr "Криминецкий_Lead_Backend_2026_CV.docx"
+
+msgid "Kriminetskii_Lead_Backend_2026_CV.pdf"
 msgstr "Криминецкий_Lead_Backend_2026_CV.pdf"
 
 msgid "Total experience"

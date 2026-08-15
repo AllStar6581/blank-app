@@ -65,7 +65,13 @@ class InternationalDocxGenerator:
 
     def generate(self, output_path):
         """Generate and save the DOCX document."""
-        locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
+        try:
+            locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
+        except locale.Error:
+            try:
+                locale.setlocale(locale.LC_ALL, "en_US")
+            except locale.Error:
+                pass
         self._add_ats_header()
         self._add_concise_summary()
         self._add_ats_experience()
