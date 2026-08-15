@@ -397,18 +397,19 @@ _pending_downloads: set[str] = set()
 _prewarm_pending: set[str] = set()
 
 
-def _download_cache_key(language: str, compact: bool) -> str:
+def _download_cache_key(language: str, compact: bool, fmt: str) -> str:
     """Build the L2 cache key for a download variant."""
     data = resume_dict_ru if language == "RUSSIAN" else resume_dict
     key = make_cache_key(language, data)
+    key += f":{fmt}"
     if compact:
         key += ":compact"
     return key
 
 
-def _prewarm_download(language: str, compact: bool) -> None:
+def _prewarm_download(language: str, compact: bool, fmt: str = "docx") -> None:
     """Generate and store a download variant in L2 cache (background thread)."""
-    cache_key = _download_cache_key(language, compact)
+    cache_key = _download_cache_key(language, compact, fmt)
     if cache_key in _prewarm_pending:
         return
     if get_cached(cache_key) is not None:
@@ -419,7 +420,7 @@ def _prewarm_download(language: str, compact: bool) -> None:
         try:
             data = resume_dict_ru if language == "RUSSIAN" else resume_dict
             resume = Resume.from_json(data)
-            gen_cls = HHRuPDFGenerator if language == "RUSSIAN" else InternationalDocxGenerator
+            gen_cls = HHRuPDFGenerator if fmt == "pdf" else InternationalDocxGenerator
             buf = io.BytesIO()
             gen_cls(resume, compact=compact).generate(buf)
             buf.seek(0)
@@ -446,23 +447,20 @@ def _ensure_image_downloaded(url: str) -> None:
 
 
 @st.cache_data
-def _generate_download_bytes(language: str, compact: bool = True) -> bytes:
-    """Generate the downloadable document bytes, cached per (language, compact).
+def _generate_download_bytes(language: str, compact: bool = True, fmt: str = "docx") -> bytes:
+    """Generate the downloadable document bytes, cached per (language, compact, fmt).
 
     Checks L2 (Redis / local file) before generating; stores result in L2
     after generation so it survives process restarts.
     """
-    data = resume_dict_ru if language == "RUSSIAN" else resume_dict
-    cache_key = make_cache_key(language, data)
-    if compact:
-        cache_key += ":compact"
+    cache_key = _download_cache_key(language, compact, fmt)
 
     cached = get_cached(cache_key)
     if cached is not None:
         return cached
 
     resume = _load_resume(language)
-    generator_cls = HHRuPDFGenerator if language == "RUSSIAN" else InternationalDocxGenerator
+    generator_cls = HHRuPDFGenerator if fmt == "pdf" else InternationalDocxGenerator
     buf = io.BytesIO()
     generator_cls(resume, compact=compact).generate(buf)
     buf.seek(0)
@@ -675,18 +673,39 @@ def _render_experience(resume_page, language, L_):
 
 @st.fragment
 def _render_download(language, L_):
-    """Fragment for compact toggle + download — isolated so toggling is instant."""
+    """Fragment for compact toggle + format selector + download."""
     st.toggle(L_("Compact CV (1-2 pages)"), value=True, key="compact_cv")
     compact = st.session_state.get("compact_cv", True)
-    download_bytes = _generate_download_bytes(language, compact)
-    st.download_button(
-        label=L_("📄 Download CV as .docx file (word)"),
-        data=download_bytes,
-        file_name=L_("Kriminetskii_Lead_Backend_2026_CV.docx"),
-        mime="application/octet-stream",
+
+    fmt = st.radio(
+        "Format",
+        options=["docx", "pdf"],
+        format_func=lambda x: "📝 DOCX (Word)" if x == "docx" else "📄 PDF",
+        horizontal=True,
+        key="download_fmt",
+        label_visibility="collapsed",
     )
-    # Pre-warm the OTHER compact variant so the next toggle is instant
-    _prewarm_download(language, not compact)
+
+    if fmt == "pdf":
+        file_name = L_("Kriminetskii_Lead_Backend_2026_CV.pdf")
+        mime = "application/pdf"
+        label = L_("📄 Download CV as .pdf file")
+    else:
+        file_name = L_("Kriminetskii_Lead_Backend_2026_CV.docx")
+        mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        label = L_("📄 Download CV as .docx file (word)")
+
+    download_bytes = _generate_download_bytes(language, compact, fmt)
+    st.download_button(
+        label=label,
+        data=download_bytes,
+        file_name=file_name,
+        mime=mime,
+    )
+    # Pre-warm the other compact variant and the other format
+    _prewarm_download(language, not compact, fmt)
+    other_fmt = "pdf" if fmt == "docx" else "docx"
+    _prewarm_download(language, compact, other_fmt)
 
 
 def _render_page():
@@ -761,11 +780,12 @@ def _render_page():
                 st.write(edu.university)
                 st.write(edu.programme)
 
-    # Pre-warm the OTHER language's resume + downloads in background
+    # Pre-warm the OTHER language's resume + downloads (both formats) in background
     other_lang = "RUSSIAN" if language == "ENGLISH" else "ENGLISH"
     _prewarm_resume(other_lang)
-    _prewarm_download(other_lang, True)
-    _prewarm_download(other_lang, False)
+    for _fmt in ("docx", "pdf"):
+        _prewarm_download(other_lang, True, _fmt)
+        _prewarm_download(other_lang, False, _fmt)
 
 
 # ---------------------------------------------------------------------------
