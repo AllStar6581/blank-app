@@ -1,3 +1,0 @@
-deb http://deb.debian.org/debian bullseye main
-deb http://deb.debian.org/debian bullseye-updates main
-locales-all
