@@ -1,19 +1,19 @@
 resume_dict = {
     "first_name": "Alexandr",
     "last_name": "Kriminétskii",
-    "expected_position": "Lead / Senior Backend Engineer (Python / AI/LLM)",
+    "expected_position": "Tech Lead / Engineering Manager · Python · AI/LLM",
     "email": "Kriminetz0810@gmail.com",
     "tel": "+77470305448",
     "website": "https://kriminetskii.streamlit.app",
     "photo": "static/me.jpg",
     "about": """
-Senior / Lead Backend Engineer with 10+ years designing, building, and scaling high-load distributed systems across fintech, retail, and geospatial domains.
+Senior Backend Engineer and systems architect with 10+ years designing, building, and shipping high-load distributed systems across fintech, retail, geospatial, and AI-marketplace domains.
 
-Launched a credit lending flow that approved ₱1M in loans within the first two weeks after go-live. Delivered a centralized consent service serving 11M+ loyalty cards. Architected and shipped 20+ microservices from prototype to stable production. Led engineering as CTO and Tech Lead at three companies, conducted 50+ technical interviews, reduced release cycles from days to hours through CI/CD automation.
+Launched a credit lending flow that approved ₱1M in loans within two weeks of go-live. Delivered a centralized consent service for 11M+ loyalty cards. Architected 20+ microservices from scratch to stable production. Designed a three-layer search stack with configurable runtime ranking (PostgreSQL projection → Qdrant multimodal vectors → ScoreComponent engine, retunable without redeployment) for an AI freelance marketplace. Built a production MOEX algorithmic trading platform with WebSocket, JSON-RPC, and MCP interfaces.
 
-Deep hands-on AI/LLM experience: production RAG pipelines, LangChain, Qdrant, OpenSearch, LLM function calling, vector search. AI-native workflow: Claude Code, Cursor, ChatGPT.
+Hands-on AI/LLM: production RAG pipelines, LangChain, Qdrant, OpenSearch, LLM function calling, multimodal input, offline inference (llama.cpp, GGUF, Ollama, FAISS). AI-native workflow: Claude Code, Cursor, ChatGPT.
 
-Core stack: Python, Go, PostgreSQL, Docker, Kubernetes. Fully remote — UTC+3 (EU morning overlap 8:00–14:00 CET).
+Business-first by default: validate market and unit economics before writing code; own the full product lifecycle from business brief through architecture, QA, and deployment to real users. Built and led engineering teams: 50+ technical interviews, hired and onboarded core teams, established engineering processes and quality culture from scratch. Core stack: Python, Go, PostgreSQL, Docker, Kubernetes. Fully remote — UTC+3 (EU morning overlap 8:00–14:00 CET).
 """,
     "contacts": [
         {
@@ -40,20 +40,21 @@ Core stack: Python, Go, PostgreSQL, Docker, Kubernetes. Fully remote — UTC+3 (
     ],
     "exp": [
     {
-        "company_name": "Freelance / Contract Project (Flutter + Django + LLM)",
-        "company_contacts": "[private project]",
+        "company_name": "Бегтрек.рф",
+        "company_contacts": "https://бегтрек.рф",
         "company_contacts_link": None,
         "work_start_date": "03-2026",
         "work_end_date": None,
-        "position_name": "Full-Stack Mobile & Backend Developer / Tech Lead",
+        "position_name": "Tech Lead / Full-Stack Engineer",
         "description": """
-A health and fitness mobile application integrating with Google Fit to collect and synchronize user activity metrics. The product includes a Flutter client, a Django backend, and an LLM-powered assistant with function calling and video analysis capabilities.
+A health and fitness mobile application integrating with Google Fit for activity data collection. Full product lifecycle ownership from the client side: business requirements validation, architecture design, solo implementation of a Flutter client and Django backend, and an LLM-powered assistant with function calling and multimodal video input — the assistant accesses the user's personal health data and interprets workout recordings as part of its reasoning context.
 """,
         "action_points": [
             "Sole developer of the mobile application: built the Flutter client, Django backend, and Google Fit integration for activity data collection and synchronization.",
             "Designed the application architecture, API contracts, and data models from scratch; responsible for production deployment and ongoing support.",
-            "Developed an LLM assistant with function calling and video analysis: the assistant accesses user content from the app, interprets health data, invokes backend functions, and uses video recordings as part of its context.",
-            "Acting as tech lead: formulating requirements, regularly engaging the client and designer to clarify scenarios, UX details, and priorities — ensuring the product solves real user problems.",
+            "Built an LLM assistant with tool use (function calling) and multimodal input: reads the user's personal health metrics from the app, calls backend APIs to update or retrieve data, and analyzes workout video recordings as reasoning context — context-aware coaching from the user's actual data, not generic prompts.",
+            "Running full product lifecycle from the business side: validate requirements with the client before writing code, align with the designer on UX and user flows, scope features against real user needs — end-to-end accountability from business brief to production deployment and user feedback.",
+            "Prepared the app for publication in RuStore (Russian app store), configured production monitoring and technical support.",
         ],
         "responsibilities": [
             "End-to-end mobile application development: Flutter client, Django REST backend, and data synchronization with Google Fit.",
@@ -81,6 +82,11 @@ A health and fitness mobile application integrating with Google Fit to collect a
             {"name": "Linux", "category": "DevOps & Infrastructure"},
             {"name": "Bash", "category": "DevOps & Infrastructure"},
             {"name": "nginx", "category": "DevOps & Infrastructure"},
+            {"name": "Ansible", "category": "DevOps & Infrastructure"},
+            {"name": "C4 model", "category": "Architecture & Methodologies"},
+            {"name": "Archimate", "category": "Architecture & Methodologies"},
+            {"name": "Maestro", "category": "Quality & Testing"},
+            {"name": "WebSocket", "category": "Messaging & Streaming"},
         ],
     },
     {
@@ -88,17 +94,17 @@ A health and fitness mobile application integrating with Google Fit to collect a
         "company_contacts": "neunet.work",
         "company_contacts_link": "https://drive.google.com/file/d/14sSyT0KPF9AXZZwcvY_T_9a8r3U1-3Hw/view?usp=sharing",
         "work_start_date": "03-2026",
-        "work_end_date": "07-2026",
+        "work_end_date": "06-2026",
         "position_name": "CTO & Lead Developer",
         "description": """
-Neunet.Work is an AI-powered recruitment platform built around a semantic search engine and RAG-based assistant. The platform matches candidates and vacancies using vector search and LLM-driven reasoning, with a focus on quality of match over keyword relevance.
+Neunet.Work is an AI-powered two-sided freelance marketplace for AI-specialized creators, targeting Russian-speaking markets. Covers 20+ verticals: AI-video, AI-visual, AI-audio, AI-business. Team of 6 including the founder. Built a production-ready MVP with a three-layer search stack, configurable ranking engine, full contract lifecycle FSM, arbitration system, and escrow payments. Did not reach market launch.
 """,
         "action_points": [
-            "Designed the system architecture for the search engine and RAG assistant using C4 and Archimate notation, enabling clear communication with the team and stakeholders.",
-            "Built the RAG pipeline with an AI assistant and semantic search engine on top of LangChain, Qdrant, and OpenSearch.",
-            "Established engineering processes: code review standards, branching strategy, and release workflows.",
-            "Set up CI/CD pipelines and defined environment and infrastructure requirements to ensure predictable, reproducible delivery.",
-            "Made key decisions on technology stack and infrastructure direction.",
+            "Designed a three-layer search architecture: PostgreSQL source of truth (Kafka outbox on mutations) → smart_search projection schema (denormalized cards, document hash, projection_status) → Qdrant vector index with three vectors per work (dense text via Ollama nomic-embed-text, sparse BM25, multimodal via OpenCLIP).",
+            "Built a configurable ranking engine with 5 ScoreComponents (TextRelevance, SubscriptionTier, Availability, Popularity, Freshness), weights stored in the DB — ranking behavior retunable at runtime without redeployment.",
+            "Developed a Go SMS gateway microservice (gRPC + REST + Kafka Outbox pattern), a WebSocket online-presence service backed by Redis, and integrated Matrix Synapse for in-platform federated chat.",
+            "Implemented the full contract lifecycle as a 12-state FSM (DRAFT → COMPLETED) with dispute resolution, arbitration system, escrow payments, staged milestones, and SMS OTP contract signing.",
+            "Provisioned production infrastructure via Ansible IaC across 2 dedicated servers; configured full observability stack (Prometheus + Grafana + Jaeger + Loki + AKHQ) and GitLab CI/CD pipelines.",
         ],
         "responsibilities": [
             "Owning the technical side of the product: system architecture, stack decisions, and infrastructure.",
@@ -126,6 +132,14 @@ Neunet.Work is an AI-powered recruitment platform built around a semantic search
             {"name": "Docker", "category": "DevOps & Infrastructure"},
             {"name": "OpenCLIP", "category": "AI & ML"},
             {"name": "HuggingFace", "category": "AI & ML"},
+            {"name": "Kafka", "category": "Messaging & Streaming"},
+            {"name": "Matrix Synapse", "category": "DevOps & Infrastructure"},
+            {"name": "MinIO", "category": "DevOps & Infrastructure"},
+            {"name": "Keycloak", "category": "DevOps & Infrastructure"},
+            {"name": "Prometheus", "category": "Monitoring & Observability"},
+            {"name": "Grafana", "category": "Monitoring & Observability"},
+            {"name": "Jaeger", "category": "Monitoring & Observability"},
+            {"name": "Loki", "category": "Monitoring & Observability"},
             {"name": "AWS S3", "category": "Cloud & Databases"},
             {"name": "Ansible", "category": "DevOps & Infrastructure"},
             {"name": "Git", "category": "DevOps & Infrastructure"},
@@ -141,7 +155,7 @@ Neunet.Work is an AI-powered recruitment platform built around a semantic search
         "work_end_date": "11-2025",
         "position_name": "Senior / Lead Backend Engineer",
         "description": """
-UMI is a Philippines-based fintech startup and BNPL aggregation platform that connects multiple lenders through a mobile and web experience. The platform operates in a highly regulated environment, with a strong focus on credit risk, underwriting quality, and payment reliability in an emerging market.
+UMI was a Philippines-based fintech startup and BNPL aggregation platform connecting multiple lenders through a mobile and web experience. The platform operated in a highly regulated environment with a strong focus on credit risk, underwriting quality, and payment reliability in an emerging market. The company has since closed.
 """,
     "action_points": [
         "Architected and implemented the core backend platform (~20 microservices) from scratch, taking the system from prototype to stable production.",
@@ -149,6 +163,7 @@ UMI is a Philippines-based fintech startup and BNPL aggregation platform that co
         "Conducted ~50 technical interviews and helped build a core engineering team of 4 developers, including onboarding, mentoring, and setting engineering standards.",
         "Introduced code review practices, automated testing, and static analysis, significantly reducing production incidents and increasing release confidence.",
         "Designed and shipped an LLM-based customer support chatbot using a RAG pipeline (Qwen embeddings + FAISS), reducing first-line support load and improving response quality.",
+        "Built QA infrastructure across three levels: Appium mobile UI test suite for end-to-end user flows, Locust load test scenarios for credit and payment endpoints, and BDD test coverage with behave-django and Gherkin — establishing quality gates that reduced regressions before each release.",
         "Implemented end-to-end observability (structured logging, metrics, alerting) with Prometheus, Grafana, Sentry, and ELK, shortening incident detection and resolution time (MTTR).",
         "Built a fully automated CI/CD pipeline from the ground up, reducing release cycles from several days to a few hours and enabling frequent, low-risk deployments.",
         "Prepared architecture diagrams, security documentation, and disaster-recovery materials for investor due diligence, increasing confidence in the platform’s scalability and robustness.",
@@ -388,6 +403,7 @@ The GIS Centre at Innopolis University focuses on research and development of ge
             "Developed the backend of Teleagronom, a system that predicts pest outbreaks and recommends field work schedules for the Ministry of Agriculture of Mordovia and local agribusinesses.",
             "Led technical discussions and API design for integrations with third-party systems, then implemented and maintained those integrations.",
             "Mentored junior developers and performed regular code reviews to maintain code quality and consistency.",
+            "Participated in CI/CD setup and service deployments to on-premise and cloud environments.",
         ],
         "responsibilities": [
             "Backend development for GIS products, including data APIs and processing services.",
@@ -841,26 +857,36 @@ Beward is a manufacturer of video surveillance hardware and software for home an
             "website": "https://www.sfu-kras.ru/en",
             "icon": "static/sfu_logo.png",
         },
+        {
+            "degree": "Professional Development — Deep Learning for Search",
+            "university": "Innopolis University",
+            "programme": "Deep Learning for Search",
+            "year_start": "2026",
+            "year_end": "2026",
+            "website": "https://innopolis.university",
+            "icon": "static/inno_logo.png",
+        },
     ],
     "spoken_languages": [
         {"name": "English", "level": "C1"},
         {"name": "Russian", "level": "Native"},
+        {"name": "Polish", "level": "A2"},
     ],
     "projects": [
         {
-            "text": "",
+            "text": "aijudge — offline courtroom AI assistant: faster-whisper + speaker diarization, FAISS legal knowledge base + Ollama, live case strategy generation. 100% local, no cloud dependency.",
             "link": "",
         },
         {
-            "text": "",
+            "text": "bcs_trade_integration — production MOEX algorithmic trading platform: FastAPI + WebSocket + JSON-RPC + MCP server interfaces, BCS broker, SMA crossover strategy engine, AI self-improvement loop via OpenRouter.",
             "link": "",
         },
         {
-            "text": "",
+            "text": "phi3-agent-pipe — local LLM pipeline framework on flowpipe DAGs: offline inference (GGUF/Ollama), FAISS vector store, multi-provider support, 39+ document outputs across 3 pipeline types.",
             "link": "",
         },
         {
-            "text": "",
+            "text": "frutiger_chess — Flutter chess app with custom 3D software renderer from scratch: OBJ parser, diffuse + ambient lighting model, perspective MVP matrix, PGN save/load.",
             "link": "",
         },
     ],
