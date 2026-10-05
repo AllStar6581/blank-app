@@ -94,7 +94,7 @@ A health and fitness mobile application integrating with Google Fit for activity
         "company_contacts": "neunet.work",
         "company_contacts_link": "https://drive.google.com/file/d/14sSyT0KPF9AXZZwcvY_T_9a8r3U1-3Hw/view?usp=sharing",
         "work_start_date": "03-2026",
-        "work_end_date": "06-2026",
+        "work_end_date": "07-2026",
         "position_name": "CTO & Lead Developer",
         "description": """
 Neunet.Work is an AI-powered two-sided freelance marketplace for AI-specialized creators, targeting Russian-speaking markets. Covers 20+ verticals: AI-video, AI-visual, AI-audio, AI-business. Team of 6 including the founder. Built a production-ready MVP with a three-layer search stack, configurable ranking engine, full contract lifecycle FSM, arbitration system, and escrow payments. Did not reach market launch.
